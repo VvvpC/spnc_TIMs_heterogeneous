@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Bash(pip install:*)",
+      "Bash(del explore_data.py)",
+      "Bash(rm:*)",
+      "Read(/C:\\Users\\Chen\\Desktop\\Repository\\spnc_taskindependent_metrics\\ParetoFront_CQandMC/**)",
+      "Read(/C:\\Users\\Chen\\Desktop\\Repository\\spnc_taskindependent_metrics/**)",
+      "Read(/C:\\Users\\Chen\\Desktop\\Repository\\spnc_taskindependent_metrics\\Morphology_Research/**)",
+      "Bash(mkdir:*)"
+    ],
+    "deny": []
+  }
+}

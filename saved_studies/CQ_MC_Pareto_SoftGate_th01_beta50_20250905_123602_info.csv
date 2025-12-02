@@ -1,0 +1,2 @@
+study_name,directions,n_objectives,sampler_name,creation_time,n_trials,n_completed_trials
+CQ_MC_Pareto_SoftGate_th01_beta50,"['MAXIMIZE', 'MAXIMIZE']",2,NSGAIISampler,2025-09-05T12:36:02.863376,600,600

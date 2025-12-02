@@ -1,0 +1,2 @@
+study_name,directions,n_objectives,sampler_name,creation_time,n_trials,n_completed_trials
+Reservoir_Morphology_CQ_MC_Pareto_random,"['MAXIMIZE', 'MAXIMIZE']",2,NSGAIISampler,2025-07-25T10:50:52.495514,200,197

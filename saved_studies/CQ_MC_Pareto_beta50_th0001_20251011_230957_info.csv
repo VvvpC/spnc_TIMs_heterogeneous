@@ -1,0 +1,2 @@
+study_name,directions,n_objectives,sampler_name,creation_time,n_trials,n_completed_trials
+CQ_MC_Pareto_beta50_th0001,"['MAXIMIZE', 'MAXIMIZE']",2,NSGAIISampler,2025-10-11T23:09:57.415178,270,269

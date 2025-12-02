@@ -1,0 +1,5958 @@
+{
+  "study_info": {
+    "study_name": "dynamicstims_beta20to50_theta001to06",
+    "directions": [
+      "MAXIMIZE",
+      "MAXIMIZE"
+    ],
+    "n_objectives": 2,
+    "sampler_name": "NSGAIISampler",
+    "creation_time": "2025-10-17T12:51:16.303001",
+    "n_trials": 289,
+    "n_completed_trials": 288
+  },
+  "trials": [
+    {
+      "number": 0,
+      "state": "COMPLETE",
+      "values": [
+        122.0,
+        3.557962373250727
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.13476351411969267,
+        "m0": 0.003,
+        "beta_prime": 21.019640332914033
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-15T22:15:11.317167",
+      "datetime_complete": "2025-10-15T22:23:05.216338",
+      "duration": 473.899171
+    },
+    {
+      "number": 1,
+      "state": "COMPLETE",
+      "values": [
+        59.0,
+        5.423599077270804
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.2548778581997347,
+        "m0": 0.003,
+        "beta_prime": 46.20811595802344
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-15T22:23:05.228348",
+      "datetime_complete": "2025-10-15T22:30:59.448149",
+      "duration": 474.219801
+    },
+    {
+      "number": 2,
+      "state": "COMPLETE",
+      "values": [
+        81.0,
+        3.8420938064677475
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.489613931433125,
+        "m0": 0.003,
+        "beta_prime": 29.198425460549654
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-15T22:30:59.458159",
+      "datetime_complete": "2025-10-15T22:38:53.280318",
+      "duration": 473.822159
+    },
+    {
+      "number": 3,
+      "state": "COMPLETE",
+      "values": [
+        124.0,
+        3.5762016025274175
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.051268710933033416,
+        "m0": 0.003,
+        "beta_prime": 21.94008119203838
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-15T22:38:53.291328",
+      "datetime_complete": "2025-10-15T22:46:47.326460",
+      "duration": 474.035132
+    },
+    {
+      "number": 4,
+      "state": "COMPLETE",
+      "values": [
+        133.0,
+        4.030083958029231
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04506929836123935,
+        "m0": 0.003,
+        "beta_prime": 32.34871107894818
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-15T22:46:47.336470",
+      "datetime_complete": "2025-10-15T22:54:41.175987",
+      "duration": 473.839517
+    },
+    {
+      "number": 5,
+      "state": "COMPLETE",
+      "values": [
+        98.0,
+        4.606916977479612
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.22200937039798946,
+        "m0": 0.003,
+        "beta_prime": 32.024781526935826
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-15T22:54:41.185996",
+      "datetime_complete": "2025-10-15T23:02:35.149614",
+      "duration": 473.963618
+    },
+    {
+      "number": 6,
+      "state": "COMPLETE",
+      "values": [
+        59.0,
+        5.533813514895404
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.23388100327800568,
+        "m0": 0.003,
+        "beta_prime": 47.29749689844223
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-15T23:02:35.159624",
+      "datetime_complete": "2025-10-15T23:10:28.308102",
+      "duration": 473.148478
+    },
+    {
+      "number": 7,
+      "state": "COMPLETE",
+      "values": [
+        93.0,
+        3.76442260443945
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.374817186580846,
+        "m0": 0.003,
+        "beta_prime": 26.1494965860773
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-15T23:10:28.319113",
+      "datetime_complete": "2025-10-15T23:18:22.559850",
+      "duration": 474.240737
+    },
+    {
+      "number": 8,
+      "state": "COMPLETE",
+      "values": [
+        108.0,
+        5.148913059529707
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.11207611845436852,
+        "m0": 0.003,
+        "beta_prime": 37.05234393086667
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-15T23:18:22.570859",
+      "datetime_complete": "2025-10-15T23:26:15.275653",
+      "duration": 472.704794
+    },
+    {
+      "number": 9,
+      "state": "COMPLETE",
+      "values": [
+        88.0,
+        4.469280341816015
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.3231589042384043,
+        "m0": 0.003,
+        "beta_prime": 32.5801000545887
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-15T23:26:15.285663",
+      "datetime_complete": "2025-10-15T23:34:07.609612",
+      "duration": 472.323949
+    },
+    {
+      "number": 10,
+      "state": "COMPLETE",
+      "values": [
+        99.0,
+        3.103080641083455
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.01,
+        "m0": 0.003,
+        "beta_prime": 44.08125174810371
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-15T23:34:07.620622",
+      "datetime_complete": "2025-10-15T23:42:00.978496",
+      "duration": 473.357874
+    },
+    {
+      "number": 11,
+      "state": "COMPLETE",
+      "values": [
+        94.0,
+        5.242403065885491
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.15550961881371184,
+        "m0": 0.003,
+        "beta_prime": 39.62952574377908
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-15T23:42:00.989506",
+      "datetime_complete": "2025-10-15T23:49:54.259300",
+      "duration": 473.269794
+    },
+    {
+      "number": 12,
+      "state": "COMPLETE",
+      "values": [
+        119.0,
+        4.661443454664392
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.09455602334077616,
+        "m0": 0.003,
+        "beta_prime": 32.66474210242047
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-15T23:49:54.269309",
+      "datetime_complete": "2025-10-15T23:57:48.084256",
+      "duration": 473.814947
+    },
+    {
+      "number": 13,
+      "state": "COMPLETE",
+      "values": [
+        84.0,
+        5.418328323229378
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.18156976691651328,
+        "m0": 0.003,
+        "beta_prime": 43.03360708435743
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-15T23:57:48.094265",
+      "datetime_complete": "2025-10-16T00:05:41.983612",
+      "duration": 473.889347
+    },
+    {
+      "number": 14,
+      "state": "COMPLETE",
+      "values": [
+        125.0,
+        4.353303171332452
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.07770353929632108,
+        "m0": 0.003,
+        "beta_prime": 31.628018194355537
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T00:05:41.993621",
+      "datetime_complete": "2025-10-16T00:13:36.460486",
+      "duration": 474.466865
+    },
+    {
+      "number": 15,
+      "state": "COMPLETE",
+      "values": [
+        79.0,
+        2.9521367417303197
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.01,
+        "m0": 0.003,
+        "beta_prime": 30.444856719151613
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T00:13:36.470494",
+      "datetime_complete": "2025-10-16T00:21:31.274984",
+      "duration": 474.80449
+    },
+    {
+      "number": 16,
+      "state": "COMPLETE",
+      "values": [
+        100.0,
+        5.656396836189673
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.07983860504416496,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T00:21:31.286996",
+      "datetime_complete": "2025-10-16T00:29:25.592715",
+      "duration": 474.305719
+    },
+    {
+      "number": 17,
+      "state": "COMPLETE",
+      "values": [
+        85.0,
+        5.816215211834727
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.11610915640052219,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T00:29:25.602724",
+      "datetime_complete": "2025-10-16T00:37:19.159444",
+      "duration": 473.55672
+    },
+    {
+      "number": 18,
+      "state": "COMPLETE",
+      "values": [
+        26.0,
+        4.60831847646602
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.5999999999999999,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T00:37:19.169453",
+      "datetime_complete": "2025-10-16T00:45:13.450152",
+      "duration": 474.280699
+    },
+    {
+      "number": 19,
+      "state": "COMPLETE",
+      "values": [
+        118.0,
+        5.2177904139751226
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.07539187276758565,
+        "m0": 0.003,
+        "beta_prime": 40.37589341118968
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T00:45:13.461162",
+      "datetime_complete": "2025-10-16T00:53:07.127310",
+      "duration": 473.666148
+    },
+    {
+      "number": 20,
+      "state": "COMPLETE",
+      "values": [
+        125.0,
+        4.688873109459578
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.057013035709278535,
+        "m0": 0.003,
+        "beta_prime": 38.724686262743475
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T00:53:07.137318",
+      "datetime_complete": "2025-10-16T01:01:00.936247",
+      "duration": 473.798929
+    },
+    {
+      "number": 21,
+      "state": "COMPLETE",
+      "values": [
+        111.0,
+        5.414675268594774
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.08025274538853618,
+        "m0": 0.003,
+        "beta_prime": 44.18687168443785
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T01:01:00.948258",
+      "datetime_complete": "2025-10-16T01:08:54.277775",
+      "duration": 473.329517
+    },
+    {
+      "number": 22,
+      "state": "COMPLETE",
+      "values": [
+        92.0,
+        5.813041284091229
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.10783089399848145,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T01:08:54.288785",
+      "datetime_complete": "2025-10-16T01:16:47.896664",
+      "duration": 473.607879
+    },
+    {
+      "number": 23,
+      "state": "COMPLETE",
+      "values": [
+        128.0,
+        4.34716527242866
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.06134322179650665,
+        "m0": 0.003,
+        "beta_prime": 34.417593173264805
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T01:16:47.906674",
+      "datetime_complete": "2025-10-16T01:24:42.315124",
+      "duration": 474.40845
+    },
+    {
+      "number": 24,
+      "state": "COMPLETE",
+      "values": [
+        73.0,
+        5.7135689061055555
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.13720037924230516,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T01:24:42.325134",
+      "datetime_complete": "2025-10-16T01:32:36.002292",
+      "duration": 473.677158
+    },
+    {
+      "number": 25,
+      "state": "COMPLETE",
+      "values": [
+        34.0,
+        5.145347944321478
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.40064935507416377,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T01:32:36.012301",
+      "datetime_complete": "2025-10-16T01:40:29.726302",
+      "duration": 473.714001
+    },
+    {
+      "number": 26,
+      "state": "COMPLETE",
+      "values": [
+        96.0,
+        5.8026366623884496
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.105042265769195,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T01:40:29.736311",
+      "datetime_complete": "2025-10-16T01:48:24.275238",
+      "duration": 474.538927
+    },
+    {
+      "number": 27,
+      "state": "COMPLETE",
+      "values": [
+        108.0,
+        5.52779372554284
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.08868043075134024,
+        "m0": 0.003,
+        "beta_prime": 45.344545469969916
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T01:48:24.286249",
+      "datetime_complete": "2025-10-16T01:56:17.520011",
+      "duration": 473.233762
+    },
+    {
+      "number": 28,
+      "state": "COMPLETE",
+      "values": [
+        118.0,
+        3.521678918392924
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.18744832585148655,
+        "m0": 0.003,
+        "beta_prime": 20.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T01:56:17.532021",
+      "datetime_complete": "2025-10-16T02:04:10.509361",
+      "duration": 472.97734
+    },
+    {
+      "number": 29,
+      "state": "COMPLETE",
+      "values": [
+        88.0,
+        3.1084679485402824
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.6,
+        "m0": 0.003,
+        "beta_prime": 20.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T02:04:10.520371",
+      "datetime_complete": "2025-10-16T02:12:03.297535",
+      "duration": 472.777164
+    },
+    {
+      "number": 30,
+      "state": "COMPLETE",
+      "values": [
+        104.0,
+        3.5001175040209036
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.28067930534731217,
+        "m0": 0.003,
+        "beta_prime": 20.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T02:12:03.307544",
+      "datetime_complete": "2025-10-16T02:19:57.216754",
+      "duration": 473.90921
+    },
+    {
+      "number": 31,
+      "state": "COMPLETE",
+      "values": [
+        123.0,
+        4.958393236567365
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.06867191885017149,
+        "m0": 0.003,
+        "beta_prime": 38.860392610666395
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T02:19:57.227766",
+      "datetime_complete": "2025-10-16T02:27:50.766488",
+      "duration": 473.538722
+    },
+    {
+      "number": 32,
+      "state": "COMPLETE",
+      "values": [
+        128.0,
+        4.385557165158975
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.059062156927118054,
+        "m0": 0.003,
+        "beta_prime": 34.9760261478676
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T02:27:50.776497",
+      "datetime_complete": "2025-10-16T02:35:43.908169",
+      "duration": 473.131672
+    },
+    {
+      "number": 33,
+      "state": "COMPLETE",
+      "values": [
+        130.0,
+        4.321995600973285
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.056463029476446575,
+        "m0": 0.003,
+        "beta_prime": 33.86198235645725
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T02:35:43.919179",
+      "datetime_complete": "2025-10-16T02:43:37.264040",
+      "duration": 473.344861
+    },
+    {
+      "number": 34,
+      "state": "COMPLETE",
+      "values": [
+        105.0,
+        5.622819967074256
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0938844665069545,
+        "m0": 0.003,
+        "beta_prime": 47.05725522383744
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T02:43:37.275051",
+      "datetime_complete": "2025-10-16T02:51:30.671958",
+      "duration": 473.396907
+    },
+    {
+      "number": 35,
+      "state": "COMPLETE",
+      "values": [
+        97.0,
+        5.67020373624782
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.09537620926134968,
+        "m0": 0.003,
+        "beta_prime": 48.73810400335127
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T02:51:30.681968",
+      "datetime_complete": "2025-10-16T02:59:24.242022",
+      "duration": 473.560054
+    },
+    {
+      "number": 36,
+      "state": "COMPLETE",
+      "values": [
+        127.0,
+        4.556549933212544
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.061031885383944315,
+        "m0": 0.003,
+        "beta_prime": 36.168577611351964
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T02:59:24.253031",
+      "datetime_complete": "2025-10-16T03:07:17.354888",
+      "duration": 473.101857
+    },
+    {
+      "number": 37,
+      "state": "COMPLETE",
+      "values": [
+        42.0,
+        5.351786112897966
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.31817920244214964,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T03:07:17.364896",
+      "datetime_complete": "2025-10-16T03:15:10.840875",
+      "duration": 473.475979
+    },
+    {
+      "number": 38,
+      "state": "COMPLETE",
+      "values": [
+        125.0,
+        3.4142483040381126
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0842825308942428,
+        "m0": 0.003,
+        "beta_prime": 20.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T03:15:10.850886",
+      "datetime_complete": "2025-10-16T03:23:04.936929",
+      "duration": 474.086043
+    },
+    {
+      "number": 39,
+      "state": "COMPLETE",
+      "values": [
+        114.0,
+        5.353234535643388
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.08131513054756259,
+        "m0": 0.003,
+        "beta_prime": 42.169956182796106
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T03:23:04.947937",
+      "datetime_complete": "2025-10-16T03:30:58.401897",
+      "duration": 473.45396
+    },
+    {
+      "number": 40,
+      "state": "COMPLETE",
+      "values": [
+        127.0,
+        4.211426486547268
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0567168870379673,
+        "m0": 0.003,
+        "beta_prime": 31.696750792249453
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T03:30:58.411907",
+      "datetime_complete": "2025-10-16T03:38:51.687472",
+      "duration": 473.275565
+    },
+    {
+      "number": 41,
+      "state": "COMPLETE",
+      "values": [
+        118.0,
+        5.183443907616551
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.07125504789414532,
+        "m0": 0.003,
+        "beta_prime": 40.15455752033347
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T03:38:51.697480",
+      "datetime_complete": "2025-10-16T03:46:45.502507",
+      "duration": 473.805027
+    },
+    {
+      "number": 42,
+      "state": "COMPLETE",
+      "values": [
+        101.0,
+        5.653327717649232
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.09365653817837788,
+        "m0": 0.003,
+        "beta_prime": 48.799565394900554
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T03:46:45.513517",
+      "datetime_complete": "2025-10-16T03:54:39.062561",
+      "duration": 473.549044
+    },
+    {
+      "number": 43,
+      "state": "COMPLETE",
+      "values": [
+        57.0,
+        5.59204053860449
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.18923403263611935,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T03:54:39.073570",
+      "datetime_complete": "2025-10-16T04:02:32.609107",
+      "duration": 473.535537
+    },
+    {
+      "number": 44,
+      "state": "COMPLETE",
+      "values": [
+        120.0,
+        5.166664279986152
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.07102954066542755,
+        "m0": 0.003,
+        "beta_prime": 39.8654169490292
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T04:02:32.620117",
+      "datetime_complete": "2025-10-16T04:10:26.028036",
+      "duration": 473.407919
+    },
+    {
+      "number": 45,
+      "state": "COMPLETE",
+      "values": [
+        85.0,
+        5.782251200922203
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.11422161118221019,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T04:10:26.039045",
+      "datetime_complete": "2025-10-16T04:18:20.813185",
+      "duration": 474.77414
+    },
+    {
+      "number": 46,
+      "state": "COMPLETE",
+      "values": [
+        28.0,
+        4.940064591890554
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.49565760802594183,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T04:18:20.823195",
+      "datetime_complete": "2025-10-16T04:26:14.984031",
+      "duration": 474.160836
+    },
+    {
+      "number": 47,
+      "state": "COMPLETE",
+      "values": [
+        123.0,
+        4.834346144981616
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0628835697841479,
+        "m0": 0.003,
+        "beta_prime": 38.02027805695489
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T04:26:14.995042",
+      "datetime_complete": "2025-10-16T04:34:09.148733",
+      "duration": 474.153691
+    },
+    {
+      "number": 48,
+      "state": "COMPLETE",
+      "values": [
+        98.0,
+        5.701765398941163
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.09196705905271221,
+        "m0": 0.003,
+        "beta_prime": 49.670467424821034
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T04:34:09.158742",
+      "datetime_complete": "2025-10-16T04:42:07.146660",
+      "duration": 477.987918
+    },
+    {
+      "number": 49,
+      "state": "COMPLETE",
+      "values": [
+        111.0,
+        5.443687690002719
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.08680368568532025,
+        "m0": 0.003,
+        "beta_prime": 43.16832313193851
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T04:42:07.156669",
+      "datetime_complete": "2025-10-16T04:50:02.195331",
+      "duration": 475.038662
+    },
+    {
+      "number": 50,
+      "state": "COMPLETE",
+      "values": [
+        115.0,
+        5.268861287049064
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.07868616618247123,
+        "m0": 0.003,
+        "beta_prime": 41.14594029013868
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T04:50:02.206340",
+      "datetime_complete": "2025-10-16T04:57:56.922428",
+      "duration": 474.716088
+    },
+    {
+      "number": 51,
+      "state": "COMPLETE",
+      "values": [
+        123.0,
+        4.8219721774817454
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.06166951969035386,
+        "m0": 0.003,
+        "beta_prime": 38.180467071410916
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T04:57:56.932436",
+      "datetime_complete": "2025-10-16T05:05:51.328237",
+      "duration": 474.395801
+    },
+    {
+      "number": 52,
+      "state": "COMPLETE",
+      "values": [
+        124.0,
+        4.817790983637986
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0620486426163835,
+        "m0": 0.003,
+        "beta_prime": 38.01907737528642
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T05:05:51.338247",
+      "datetime_complete": "2025-10-16T05:13:45.546880",
+      "duration": 474.208633
+    },
+    {
+      "number": 53,
+      "state": "COMPLETE",
+      "values": [
+        128.0,
+        4.424070463314143
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05664522113448954,
+        "m0": 0.003,
+        "beta_prime": 35.7933778161364
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T05:13:45.557889",
+      "datetime_complete": "2025-10-16T05:21:40.416717",
+      "duration": 474.858828
+    },
+    {
+      "number": 54,
+      "state": "COMPLETE",
+      "values": [
+        115.0,
+        5.25674228295398
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0791520925237729,
+        "m0": 0.003,
+        "beta_prime": 41.03381444312871
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T05:21:40.427727",
+      "datetime_complete": "2025-10-16T05:29:34.885583",
+      "duration": 474.457856
+    },
+    {
+      "number": 55,
+      "state": "COMPLETE",
+      "values": [
+        97.0,
+        5.730807481669545
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.09093171270580687,
+        "m0": 0.003,
+        "beta_prime": 49.987290368972964
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T05:29:34.895593",
+      "datetime_complete": "2025-10-16T05:37:29.270045",
+      "duration": 474.374452
+    },
+    {
+      "number": 56,
+      "state": "COMPLETE",
+      "values": [
+        125.0,
+        4.631885858287241
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05796858989650737,
+        "m0": 0.003,
+        "beta_prime": 37.55401567591575
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T05:37:29.281054",
+      "datetime_complete": "2025-10-16T05:45:23.607793",
+      "duration": 474.326739
+    },
+    {
+      "number": 57,
+      "state": "COMPLETE",
+      "values": [
+        101.0,
+        3.224843747515287
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.440029549473856,
+        "m0": 0.003,
+        "beta_prime": 20.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T05:45:23.619803",
+      "datetime_complete": "2025-10-16T05:53:18.869367",
+      "duration": 475.249564
+    },
+    {
+      "number": 58,
+      "state": "COMPLETE",
+      "values": [
+        125.0,
+        4.609631078068185
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05915303018562837,
+        "m0": 0.003,
+        "beta_prime": 37.22431772791799
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T05:53:18.880378",
+      "datetime_complete": "2025-10-16T06:01:13.147062",
+      "duration": 474.266684
+    },
+    {
+      "number": 59,
+      "state": "COMPLETE",
+      "values": [
+        115.0,
+        5.2595872102692836
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.07885886700212769,
+        "m0": 0.003,
+        "beta_prime": 41.109965749444356
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T06:01:13.157071",
+      "datetime_complete": "2025-10-16T06:09:07.669647",
+      "duration": 474.512576
+    },
+    {
+      "number": 60,
+      "state": "COMPLETE",
+      "values": [
+        86.0,
+        5.779643402800111
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.11385899057128569,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T06:09:07.680658",
+      "datetime_complete": "2025-10-16T06:17:01.727145",
+      "duration": 474.046487
+    },
+    {
+      "number": 61,
+      "state": "COMPLETE",
+      "values": [
+        127.0,
+        4.249130085381969
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05343122988290888,
+        "m0": 0.003,
+        "beta_prime": 32.41083322866059
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T06:17:01.738156",
+      "datetime_complete": "2025-10-16T06:24:57.039776",
+      "duration": 475.30162
+    },
+    {
+      "number": 62,
+      "state": "COMPLETE",
+      "values": [
+        116.0,
+        5.285399872414163
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.07770934295654473,
+        "m0": 0.003,
+        "beta_prime": 41.310744757110484
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T06:24:57.050787",
+      "datetime_complete": "2025-10-16T06:32:51.421565",
+      "duration": 474.370778
+    },
+    {
+      "number": 63,
+      "state": "COMPLETE",
+      "values": [
+        112.0,
+        5.3610368888295445
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.08340735607798723,
+        "m0": 0.003,
+        "beta_prime": 42.69873002288785
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T06:32:51.432574",
+      "datetime_complete": "2025-10-16T06:40:45.792108",
+      "duration": 474.359534
+    },
+    {
+      "number": 64,
+      "state": "COMPLETE",
+      "values": [
+        99.0,
+        5.712231180793505
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0902707206768704,
+        "m0": 0.003,
+        "beta_prime": 49.49799329650253
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T06:40:45.803118",
+      "datetime_complete": "2025-10-16T06:48:40.640313",
+      "duration": 474.837195
+    },
+    {
+      "number": 65,
+      "state": "COMPLETE",
+      "values": [
+        64.0,
+        4.812056600860263
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.4231406628286388,
+        "m0": 0.003,
+        "beta_prime": 39.74458226080027
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T06:48:40.650322",
+      "datetime_complete": "2025-10-16T06:56:35.355063",
+      "duration": 474.704741
+    },
+    {
+      "number": 66,
+      "state": "COMPLETE",
+      "values": [
+        125.0,
+        4.6194409753869135
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05859821758805238,
+        "m0": 0.003,
+        "beta_prime": 37.36890946913435
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T06:56:35.366074",
+      "datetime_complete": "2025-10-16T07:04:30.325377",
+      "duration": 474.959303
+    },
+    {
+      "number": 67,
+      "state": "COMPLETE",
+      "values": [
+        123.0,
+        4.993205492018684
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.06728736748357007,
+        "m0": 0.003,
+        "beta_prime": 39.46081918054517
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T07:04:30.336388",
+      "datetime_complete": "2025-10-16T07:12:25.108524",
+      "duration": 474.772136
+    },
+    {
+      "number": 68,
+      "state": "COMPLETE",
+      "values": [
+        125.0,
+        4.616380900424423
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0593577328554472,
+        "m0": 0.003,
+        "beta_prime": 37.213250774849584
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T07:12:25.118532",
+      "datetime_complete": "2025-10-16T07:20:20.129884",
+      "duration": 475.011352
+    },
+    {
+      "number": 69,
+      "state": "COMPLETE",
+      "values": [
+        126.0,
+        4.613791980933685
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0593474655789491,
+        "m0": 0.003,
+        "beta_prime": 37.201800302660736
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T07:20:20.140893",
+      "datetime_complete": "2025-10-16T07:28:15.286101",
+      "duration": 475.145208
+    },
+    {
+      "number": 70,
+      "state": "COMPLETE",
+      "values": [
+        111.0,
+        5.364107625783263
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.08310626745901763,
+        "m0": 0.003,
+        "beta_prime": 42.82907427862023
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T07:28:15.297111",
+      "datetime_complete": "2025-10-16T07:36:10.047401",
+      "duration": 474.75029
+    },
+    {
+      "number": 71,
+      "state": "COMPLETE",
+      "values": [
+        123.0,
+        4.781003751938901
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05998960688563904,
+        "m0": 0.003,
+        "beta_prime": 38.132713732759605
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T07:36:10.057410",
+      "datetime_complete": "2025-10-16T07:44:04.766490",
+      "duration": 474.70908
+    },
+    {
+      "number": 72,
+      "state": "COMPLETE",
+      "values": [
+        121.0,
+        5.0011441409246205
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.06796256798361151,
+        "m0": 0.003,
+        "beta_prime": 39.56666120457004
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T07:44:04.776499",
+      "datetime_complete": "2025-10-16T07:51:59.646370",
+      "duration": 474.869871
+    },
+    {
+      "number": 73,
+      "state": "COMPLETE",
+      "values": [
+        111.0,
+        5.3663481491282194
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.08340709782949662,
+        "m0": 0.003,
+        "beta_prime": 42.78023734234975
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T07:51:59.657380",
+      "datetime_complete": "2025-10-16T07:59:54.656720",
+      "duration": 474.99934
+    },
+    {
+      "number": 74,
+      "state": "COMPLETE",
+      "values": [
+        112.0,
+        5.3631947233293875
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.08312347255874226,
+        "m0": 0.003,
+        "beta_prime": 42.83131670060792
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T07:59:54.666730",
+      "datetime_complete": "2025-10-16T08:07:50.718009",
+      "duration": 476.051279
+    },
+    {
+      "number": 75,
+      "state": "COMPLETE",
+      "values": [
+        105.0,
+        3.364891232984022
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.3322828923173512,
+        "m0": 0.003,
+        "beta_prime": 20.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T08:07:50.728018",
+      "datetime_complete": "2025-10-16T08:15:47.300769",
+      "duration": 476.572751
+    },
+    {
+      "number": 76,
+      "state": "COMPLETE",
+      "values": [
+        98.0,
+        5.794154936291955
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.09285574544823748,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T08:15:47.311780",
+      "datetime_complete": "2025-10-16T08:23:44.552894",
+      "duration": 477.241114
+    },
+    {
+      "number": 77,
+      "state": "COMPLETE",
+      "values": [
+        42.0,
+        5.510204106384321
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.25619473985350083,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T08:23:44.563905",
+      "datetime_complete": "2025-10-16T08:31:42.905485",
+      "duration": 478.34158
+    },
+    {
+      "number": 78,
+      "state": "COMPLETE",
+      "values": [
+        100.0,
+        5.655788113449324
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.08969068824076079,
+        "m0": 0.003,
+        "beta_prime": 49.11683275715423
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T08:31:42.917495",
+      "datetime_complete": "2025-10-16T08:39:41.596122",
+      "duration": 478.678627
+    },
+    {
+      "number": 79,
+      "state": "COMPLETE",
+      "values": [
+        100.0,
+        5.658455258265647
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.09005193621949674,
+        "m0": 0.003,
+        "beta_prime": 49.12601790610033
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T08:39:41.606132",
+      "datetime_complete": "2025-10-16T08:47:42.114898",
+      "duration": 480.508766
+    },
+    {
+      "number": 80,
+      "state": "COMPLETE",
+      "values": [
+        86.0,
+        5.82197009915757
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.11109108557000798,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T08:47:42.125908",
+      "datetime_complete": "2025-10-16T08:55:39.489585",
+      "duration": 477.363677
+    },
+    {
+      "number": 81,
+      "state": "COMPLETE",
+      "values": [
+        123.0,
+        4.762802475413601
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0616202510137628,
+        "m0": 0.003,
+        "beta_prime": 37.72430171428206
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T08:55:39.500594",
+      "datetime_complete": "2025-10-16T09:03:38.252286",
+      "duration": 478.751692
+    },
+    {
+      "number": 82,
+      "state": "COMPLETE",
+      "values": [
+        98.0,
+        5.683437897391322
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.08907828123137886,
+        "m0": 0.003,
+        "beta_prime": 49.30799891201696
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T09:03:38.263296",
+      "datetime_complete": "2025-10-16T09:11:35.192360",
+      "duration": 476.929064
+    },
+    {
+      "number": 83,
+      "state": "COMPLETE",
+      "values": [
+        129.0,
+        4.189427756255611
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.056356109658002015,
+        "m0": 0.003,
+        "beta_prime": 30.753357211915393
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T09:11:35.202368",
+      "datetime_complete": "2025-10-16T09:19:33.770897",
+      "duration": 478.568529
+    },
+    {
+      "number": 84,
+      "state": "COMPLETE",
+      "values": [
+        59.0,
+        4.23723789007895
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.6,
+        "m0": 0.003,
+        "beta_prime": 37.15314743635797
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T09:19:33.782907",
+      "datetime_complete": "2025-10-16T09:27:32.187302",
+      "duration": 478.404395
+    },
+    {
+      "number": 85,
+      "state": "COMPLETE",
+      "values": [
+        123.0,
+        4.995764637267985
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.06869209626334964,
+        "m0": 0.003,
+        "beta_prime": 39.449137491879796
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T09:27:32.197311",
+      "datetime_complete": "2025-10-16T09:35:32.312910",
+      "duration": 480.115599
+    },
+    {
+      "number": 86,
+      "state": "COMPLETE",
+      "values": [
+        122.0,
+        5.106283982237725
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.06888689901628917,
+        "m0": 0.003,
+        "beta_prime": 39.51120474811661
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T09:35:32.323920",
+      "datetime_complete": "2025-10-16T09:43:29.614306",
+      "duration": 477.290386
+    },
+    {
+      "number": 87,
+      "state": "COMPLETE",
+      "values": [
+        124.0,
+        4.758497442963656
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.062052142311452105,
+        "m0": 0.003,
+        "beta_prime": 37.660405427712504
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T09:43:29.624315",
+      "datetime_complete": "2025-10-16T09:51:29.082143",
+      "duration": 479.457828
+    },
+    {
+      "number": 88,
+      "state": "COMPLETE",
+      "values": [
+        123.0,
+        4.757124079649616
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.06195979306129263,
+        "m0": 0.003,
+        "beta_prime": 37.66613419738689
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T09:51:29.093153",
+      "datetime_complete": "2025-10-16T09:59:26.620751",
+      "duration": 477.527598
+    },
+    {
+      "number": 89,
+      "state": "COMPLETE",
+      "values": [
+        95.0,
+        3.1740798750905914
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.5379193496958256,
+        "m0": 0.003,
+        "beta_prime": 20.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T09:59:26.631760",
+      "datetime_complete": "2025-10-16T10:07:25.725758",
+      "duration": 479.093998
+    },
+    {
+      "number": 90,
+      "state": "COMPLETE",
+      "values": [
+        124.0,
+        4.753999401816299
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.062074608519939324,
+        "m0": 0.003,
+        "beta_prime": 37.61199503186295
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T10:07:25.736769",
+      "datetime_complete": "2025-10-16T10:15:23.184331",
+      "duration": 477.447562
+    },
+    {
+      "number": 91,
+      "state": "COMPLETE",
+      "values": [
+        123.0,
+        4.7572499349835695
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.06193571403283352,
+        "m0": 0.003,
+        "beta_prime": 37.62586695626446
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T10:15:23.195342",
+      "datetime_complete": "2025-10-16T10:23:22.952143",
+      "duration": 479.756801
+    },
+    {
+      "number": 92,
+      "state": "COMPLETE",
+      "values": [
+        111.0,
+        5.372584808870707
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0843482790589318,
+        "m0": 0.003,
+        "beta_prime": 42.64606458569196
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T10:23:22.962153",
+      "datetime_complete": "2025-10-16T10:31:20.611860",
+      "duration": 477.649707
+    },
+    {
+      "number": 93,
+      "state": "COMPLETE",
+      "values": [
+        124.0,
+        4.762380424174378
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.06173242062692769,
+        "m0": 0.003,
+        "beta_prime": 37.63960763998857
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T10:31:20.622869",
+      "datetime_complete": "2025-10-16T10:39:19.402040",
+      "duration": 478.779171
+    },
+    {
+      "number": 94,
+      "state": "COMPLETE",
+      "values": [
+        60.0,
+        5.064201384008498
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.34881156450068646,
+        "m0": 0.003,
+        "beta_prime": 43.26443662366111
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T10:39:19.412048",
+      "datetime_complete": "2025-10-16T10:47:16.462220",
+      "duration": 477.050172
+    },
+    {
+      "number": 95,
+      "state": "COMPLETE",
+      "values": [
+        124.0,
+        4.761554746689563
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.06180500018533469,
+        "m0": 0.003,
+        "beta_prime": 37.60705362687534
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T10:47:16.472229",
+      "datetime_complete": "2025-10-16T10:55:15.359610",
+      "duration": 478.887381
+    },
+    {
+      "number": 96,
+      "state": "COMPLETE",
+      "values": [
+        124.0,
+        4.763720908535509
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.06172805518679036,
+        "m0": 0.003,
+        "beta_prime": 37.608765681739136
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T10:55:15.369619",
+      "datetime_complete": "2025-10-16T11:03:12.945836",
+      "duration": 477.576217
+    },
+    {
+      "number": 97,
+      "state": "COMPLETE",
+      "values": [
+        125.0,
+        4.765695286458211
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0616519116197961,
+        "m0": 0.003,
+        "beta_prime": 37.60904962687409
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T11:03:12.955845",
+      "datetime_complete": "2025-10-16T11:11:12.376852",
+      "duration": 479.421007
+    },
+    {
+      "number": 98,
+      "state": "COMPLETE",
+      "values": [
+        110.0,
+        5.3740494168594175
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.08454338164881048,
+        "m0": 0.003,
+        "beta_prime": 42.611573758816164
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T11:11:12.388862",
+      "datetime_complete": "2025-10-16T11:19:09.855285",
+      "duration": 477.466423
+    },
+    {
+      "number": 99,
+      "state": "COMPLETE",
+      "values": [
+        111.0,
+        5.376053958381876
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.08367938941084761,
+        "m0": 0.003,
+        "beta_prime": 42.752438767569295
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T11:19:09.866296",
+      "datetime_complete": "2025-10-16T11:27:09.162596",
+      "duration": 479.2963
+    },
+    {
+      "number": 100,
+      "state": "COMPLETE",
+      "values": [
+        99.0,
+        5.677247888411518
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.08913534082857397,
+        "m0": 0.003,
+        "beta_prime": 49.27176666276995
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T11:27:09.173606",
+      "datetime_complete": "2025-10-16T11:35:08.358906",
+      "duration": 479.1853
+    },
+    {
+      "number": 101,
+      "state": "COMPLETE",
+      "values": [
+        99.0,
+        5.663151010419569
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.08971757415408577,
+        "m0": 0.003,
+        "beta_prime": 49.18009775098096
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T11:35:08.369916",
+      "datetime_complete": "2025-10-16T11:43:05.438104",
+      "duration": 477.068188
+    },
+    {
+      "number": 102,
+      "state": "COMPLETE",
+      "values": [
+        116.0,
+        5.246057289697754
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.07656229338297445,
+        "m0": 0.003,
+        "beta_prime": 40.817577196474346
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T11:43:05.450114",
+      "datetime_complete": "2025-10-16T11:51:07.547213",
+      "duration": 482.097099
+    },
+    {
+      "number": 103,
+      "state": "COMPLETE",
+      "values": [
+        101.0,
+        5.669671425844567
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.09024602178614667,
+        "m0": 0.003,
+        "beta_prime": 49.12202577043888
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T11:51:07.558223",
+      "datetime_complete": "2025-10-16T11:59:05.754617",
+      "duration": 478.196394
+    },
+    {
+      "number": 104,
+      "state": "COMPLETE",
+      "values": [
+        116.0,
+        5.243159729828996
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.07651489722240411,
+        "m0": 0.003,
+        "beta_prime": 40.80807038350329
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T11:59:05.765625",
+      "datetime_complete": "2025-10-16T12:07:06.937237",
+      "duration": 481.171612
+    },
+    {
+      "number": 105,
+      "state": "COMPLETE",
+      "values": [
+        129.0,
+        4.168300458491343
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05220172146761622,
+        "m0": 0.003,
+        "beta_prime": 31.352475415194874
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T12:07:06.947247",
+      "datetime_complete": "2025-10-16T12:15:05.703942",
+      "duration": 478.756695
+    },
+    {
+      "number": 106,
+      "state": "COMPLETE",
+      "values": [
+        109.0,
+        5.509432743040152
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.08774307822587625,
+        "m0": 0.003,
+        "beta_prime": 44.17702457842134
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T12:15:05.714953",
+      "datetime_complete": "2025-10-16T12:23:05.973641",
+      "duration": 480.258688
+    },
+    {
+      "number": 107,
+      "state": "COMPLETE",
+      "values": [
+        109.0,
+        5.367503340196566
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0846049229670387,
+        "m0": 0.003,
+        "beta_prime": 42.55598728634637
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T12:23:05.983651",
+      "datetime_complete": "2025-10-16T12:31:04.850170",
+      "duration": 478.866519
+    },
+    {
+      "number": 108,
+      "state": "COMPLETE",
+      "values": [
+        125.0,
+        4.6273242281910125
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05915260781459099,
+        "m0": 0.003,
+        "beta_prime": 37.37220543550104
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T12:31:04.860178",
+      "datetime_complete": "2025-10-16T12:39:06.260285",
+      "duration": 481.400107
+    },
+    {
+      "number": 109,
+      "state": "COMPLETE",
+      "values": [
+        125.0,
+        4.625046737602814
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05928025963290976,
+        "m0": 0.003,
+        "beta_prime": 37.345421972066475
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T12:39:06.271295",
+      "datetime_complete": "2025-10-16T12:47:05.127079",
+      "duration": 478.855784
+    },
+    {
+      "number": 110,
+      "state": "COMPLETE",
+      "values": [
+        106.0,
+        5.555054218219829
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.09153966198928272,
+        "m0": 0.003,
+        "beta_prime": 45.45691099202588
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T12:47:05.137089",
+      "datetime_complete": "2025-10-16T12:55:06.568026",
+      "duration": 481.430937
+    },
+    {
+      "number": 111,
+      "state": "COMPLETE",
+      "values": [
+        115.0,
+        5.245489144822659
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.07679706561325546,
+        "m0": 0.003,
+        "beta_prime": 40.69498143069724
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T12:55:06.579036",
+      "datetime_complete": "2025-10-16T13:03:05.610196",
+      "duration": 479.03116
+    },
+    {
+      "number": 112,
+      "state": "COMPLETE",
+      "values": [
+        124.0,
+        4.864130567980548
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.06405893489396997,
+        "m0": 0.003,
+        "beta_prime": 38.18112016100363
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T13:03:05.621206",
+      "datetime_complete": "2025-10-16T13:11:07.374085",
+      "duration": 481.752879
+    },
+    {
+      "number": 113,
+      "state": "COMPLETE",
+      "values": [
+        92.0,
+        5.803218885065995
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.10915823657958566,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T13:11:07.384094",
+      "datetime_complete": "2025-10-16T13:19:06.311121",
+      "duration": 478.927027
+    },
+    {
+      "number": 114,
+      "state": "COMPLETE",
+      "values": [
+        125.0,
+        4.632542365675757
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05891472363503911,
+        "m0": 0.003,
+        "beta_prime": 37.45019627804588
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T13:19:06.322132",
+      "datetime_complete": "2025-10-16T13:27:08.152359",
+      "duration": 481.830227
+    },
+    {
+      "number": 115,
+      "state": "COMPLETE",
+      "values": [
+        114.0,
+        5.240683994788056
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.07696546670181488,
+        "m0": 0.003,
+        "beta_prime": 40.60263104495125
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T13:27:08.162368",
+      "datetime_complete": "2025-10-16T13:35:06.736902",
+      "duration": 478.574534
+    },
+    {
+      "number": 116,
+      "state": "COMPLETE",
+      "values": [
+        115.0,
+        5.508419573964327
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.050071902557984556,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T13:35:06.746911",
+      "datetime_complete": "2025-10-16T13:43:07.699696",
+      "duration": 480.952785
+    },
+    {
+      "number": 117,
+      "state": "COMPLETE",
+      "values": [
+        109.0,
+        5.532806610570209
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.058888443572408675,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T13:43:07.710707",
+      "datetime_complete": "2025-10-16T13:51:06.362767",
+      "duration": 478.65206
+    },
+    {
+      "number": 118,
+      "state": "COMPLETE",
+      "values": [
+        122.0,
+        5.1960155219707715
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04128380830724862,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T13:51:06.372777",
+      "datetime_complete": "2025-10-16T13:59:06.146381",
+      "duration": 479.773604
+    },
+    {
+      "number": 119,
+      "state": "COMPLETE",
+      "values": [
+        117.0,
+        5.405187863313502
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04561779604925718,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T13:59:06.156391",
+      "datetime_complete": "2025-10-16T14:07:05.647743",
+      "duration": 479.491352
+    },
+    {
+      "number": 120,
+      "state": "COMPLETE",
+      "values": [
+        120.0,
+        5.3805513304359005
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04352969768486465,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T14:07:05.657753",
+      "datetime_complete": "2025-10-16T14:15:05.987018",
+      "duration": 480.329265
+    },
+    {
+      "number": 121,
+      "state": "COMPLETE",
+      "values": [
+        107.0,
+        5.531143500960708
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.058661710382905234,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T14:15:05.997026",
+      "datetime_complete": "2025-10-16T14:23:06.590171",
+      "duration": 480.593145
+    },
+    {
+      "number": 122,
+      "state": "COMPLETE",
+      "values": [
+        123.0,
+        4.887471790737459
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.034821105566443245,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T14:23:06.602182",
+      "datetime_complete": "2025-10-16T14:31:07.329786",
+      "duration": 480.727604
+    },
+    {
+      "number": 123,
+      "state": "COMPLETE",
+      "values": [
+        122.0,
+        4.775519184509191
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.042041664092719054,
+        "m0": 0.003,
+        "beta_prime": 44.82146624939005
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T14:31:07.339795",
+      "datetime_complete": "2025-10-16T14:39:08.243818",
+      "duration": 480.904023
+    },
+    {
+      "number": 124,
+      "state": "COMPLETE",
+      "values": [
+        31.0,
+        5.0180035245757555
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.4476044033829225,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T14:39:08.254828",
+      "datetime_complete": "2025-10-16T14:47:07.109746",
+      "duration": 478.854918
+    },
+    {
+      "number": 125,
+      "state": "COMPLETE",
+      "values": [
+        112.0,
+        5.530990052361891
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05613182649023486,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T14:47:07.121756",
+      "datetime_complete": "2025-10-16T14:55:07.571965",
+      "duration": 480.450209
+    },
+    {
+      "number": 126,
+      "state": "COMPLETE",
+      "values": [
+        108.0,
+        5.536858154945437
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05828190004850203,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T14:55:07.582975",
+      "datetime_complete": "2025-10-16T15:03:06.244733",
+      "duration": 478.661758
+    },
+    {
+      "number": 127,
+      "state": "COMPLETE",
+      "values": [
+        116.0,
+        5.463703877362269
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.048200732896339776,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T15:03:06.255741",
+      "datetime_complete": "2025-10-16T15:11:03.522747",
+      "duration": 477.267006
+    },
+    {
+      "number": 128,
+      "state": "COMPLETE",
+      "values": [
+        67.0,
+        5.580017093103362
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.16151001506218493,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T15:11:03.533758",
+      "datetime_complete": "2025-10-16T15:19:00.830149",
+      "duration": 477.296391
+    },
+    {
+      "number": 129,
+      "state": "COMPLETE",
+      "values": [
+        109.0,
+        5.54053716795367
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0576874284241766,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T15:19:00.842161",
+      "datetime_complete": "2025-10-16T15:27:00.238633",
+      "duration": 479.396472
+    },
+    {
+      "number": 130,
+      "state": "COMPLETE",
+      "values": [
+        86.0,
+        5.645063327585127
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.1253243433560055,
+        "m0": 0.003,
+        "beta_prime": 46.420069784707565
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T15:27:00.249642",
+      "datetime_complete": "2025-10-16T15:34:58.645660",
+      "duration": 478.396018
+    },
+    {
+      "number": 131,
+      "state": "COMPLETE",
+      "values": [
+        122.0,
+        5.066662071624968
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.037400117765396895,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T15:34:58.656670",
+      "datetime_complete": "2025-10-16T15:42:55.681069",
+      "duration": 477.024399
+    },
+    {
+      "number": 132,
+      "state": "COMPLETE",
+      "values": [
+        108.0,
+        5.544373253289664
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05817561557610745,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T15:42:55.692079",
+      "datetime_complete": "2025-10-16T15:50:53.755710",
+      "duration": 478.063631
+    },
+    {
+      "number": 133,
+      "state": "COMPLETE",
+      "values": [
+        64.0,
+        5.146321055128119
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.29600932928903945,
+        "m0": 0.003,
+        "beta_prime": 43.20810027115641
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T15:50:53.766720",
+      "datetime_complete": "2025-10-16T15:58:50.300098",
+      "duration": 476.533378
+    },
+    {
+      "number": 134,
+      "state": "COMPLETE",
+      "values": [
+        121.0,
+        5.201152811443126
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.041519091734793165,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T15:58:50.312109",
+      "datetime_complete": "2025-10-16T16:06:49.334045",
+      "duration": 479.021936
+    },
+    {
+      "number": 135,
+      "state": "COMPLETE",
+      "values": [
+        122.0,
+        5.209552822767868
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.041700252981145075,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T16:06:49.345054",
+      "datetime_complete": "2025-10-16T16:14:46.654458",
+      "duration": 477.309404
+    },
+    {
+      "number": 136,
+      "state": "COMPLETE",
+      "values": [
+        123.0,
+        5.070894738510727
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.03749727236498588,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T16:14:46.664468",
+      "datetime_complete": "2025-10-16T16:22:43.638931",
+      "duration": 476.974463
+    },
+    {
+      "number": 137,
+      "state": "COMPLETE",
+      "values": [
+        107.0,
+        5.5276720726795485
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.059312322904452215,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T16:22:43.649941",
+      "datetime_complete": "2025-10-16T16:30:43.474359",
+      "duration": 479.824418
+    },
+    {
+      "number": 138,
+      "state": "COMPLETE",
+      "values": [
+        29.0,
+        4.786091104760737
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.5477179574809795,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T16:30:43.484367",
+      "datetime_complete": "2025-10-16T16:38:44.553884",
+      "duration": 481.069517
+    },
+    {
+      "number": 139,
+      "state": "COMPLETE",
+      "values": [
+        122.0,
+        5.013504299733508
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.035389207944064416,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T16:38:44.565894",
+      "datetime_complete": "2025-10-16T16:46:52.438734",
+      "duration": 487.87284
+    },
+    {
+      "number": 140,
+      "state": "COMPLETE",
+      "values": [
+        131.0,
+        4.213318903554214
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04886963996363043,
+        "m0": 0.003,
+        "beta_prime": 32.626054071837316
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T16:46:52.450745",
+      "datetime_complete": "2025-10-16T16:54:52.698265",
+      "duration": 480.24752
+    },
+    {
+      "number": 141,
+      "state": "COMPLETE",
+      "values": [
+        108.0,
+        5.51533426244125
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.059824900610119074,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T16:54:52.709275",
+      "datetime_complete": "2025-10-16T17:02:50.282478",
+      "duration": 477.573203
+    },
+    {
+      "number": 142,
+      "state": "COMPLETE",
+      "values": [
+        91.0,
+        5.800810744319987
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.1092502578564614,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T17:02:50.292487",
+      "datetime_complete": "2025-10-16T17:10:48.919333",
+      "duration": 478.626846
+    },
+    {
+      "number": 143,
+      "state": "COMPLETE",
+      "values": [
+        121.0,
+        5.21402726339595
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0419221413654937,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T17:10:48.929341",
+      "datetime_complete": "2025-10-16T17:18:47.983110",
+      "duration": 479.053769
+    },
+    {
+      "number": 144,
+      "state": "COMPLETE",
+      "values": [
+        103.0,
+        5.651632095001973
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0976681079915823,
+        "m0": 0.003,
+        "beta_prime": 47.14606702343568
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T17:18:47.993119",
+      "datetime_complete": "2025-10-16T17:26:47.643689",
+      "duration": 479.65057
+    },
+    {
+      "number": 145,
+      "state": "COMPLETE",
+      "values": [
+        99.0,
+        5.672839831780569
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.09760821390923033,
+        "m0": 0.003,
+        "beta_prime": 48.34018612559073
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T17:26:47.654698",
+      "datetime_complete": "2025-10-16T17:34:46.917847",
+      "duration": 479.263149
+    },
+    {
+      "number": 146,
+      "state": "COMPLETE",
+      "values": [
+        86.0,
+        5.777540721297278
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.11812496706187949,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T17:34:46.928857",
+      "datetime_complete": "2025-10-16T17:42:45.107037",
+      "duration": 478.17818
+    },
+    {
+      "number": 147,
+      "state": "COMPLETE",
+      "values": [
+        123.0,
+        4.893565195006239
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.03504066360292164,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T17:42:45.118047",
+      "datetime_complete": "2025-10-16T17:50:42.852742",
+      "duration": 477.734695
+    },
+    {
+      "number": 148,
+      "state": "COMPLETE",
+      "values": [
+        121.0,
+        5.230172873307249
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04209100893122064,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T17:50:42.863752",
+      "datetime_complete": "2025-10-16T17:58:40.619611",
+      "duration": 477.755859
+    },
+    {
+      "number": 149,
+      "state": "COMPLETE",
+      "values": [
+        122.0,
+        4.899489656801666
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.03523155657067936,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T17:58:40.629620",
+      "datetime_complete": "2025-10-16T18:06:39.773509",
+      "duration": 479.143889
+    },
+    {
+      "number": 150,
+      "state": "COMPLETE",
+      "values": [
+        99.0,
+        5.667004582889135
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.09655392611591879,
+        "m0": 0.003,
+        "beta_prime": 48.4689758966299
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T18:06:39.784519",
+      "datetime_complete": "2025-10-16T18:14:37.451606",
+      "duration": 477.667087
+    },
+    {
+      "number": 151,
+      "state": "COMPLETE",
+      "values": [
+        124.0,
+        4.654458749021947
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05420448323764983,
+        "m0": 0.003,
+        "beta_prime": 38.83687961498673
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T18:14:37.461615",
+      "datetime_complete": "2025-10-16T18:22:36.416622",
+      "duration": 478.955007
+    },
+    {
+      "number": 152,
+      "state": "COMPLETE",
+      "values": [
+        94.0,
+        5.811040254453093
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.10693249499289897,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T18:22:36.426631",
+      "datetime_complete": "2025-10-16T18:30:35.227755",
+      "duration": 478.801124
+    },
+    {
+      "number": 153,
+      "state": "COMPLETE",
+      "values": [
+        120.0,
+        3.509780267648994
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.16037864730160395,
+        "m0": 0.003,
+        "beta_prime": 20.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T18:30:35.239767",
+      "datetime_complete": "2025-10-16T18:38:32.518141",
+      "duration": 477.278374
+    },
+    {
+      "number": 154,
+      "state": "COMPLETE",
+      "values": [
+        98.0,
+        5.663326908540002
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.09638282793952015,
+        "m0": 0.003,
+        "beta_prime": 48.532085895278485
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T18:38:32.528151",
+      "datetime_complete": "2025-10-16T18:46:34.540191",
+      "duration": 482.01204
+    },
+    {
+      "number": 155,
+      "state": "COMPLETE",
+      "values": [
+        90.0,
+        5.812797007316609
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.10808982677746655,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T18:46:34.552201",
+      "datetime_complete": "2025-10-16T18:54:42.023699",
+      "duration": 487.471498
+    },
+    {
+      "number": 156,
+      "state": "COMPLETE",
+      "values": [
+        106.0,
+        5.496832034870904
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.059989731183188996,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T18:54:42.033708",
+      "datetime_complete": "2025-10-16T19:02:49.086887",
+      "duration": 487.053179
+    },
+    {
+      "number": 157,
+      "state": "COMPLETE",
+      "values": [
+        92.0,
+        5.810000053051227
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.1078105988650341,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T19:02:49.097897",
+      "datetime_complete": "2025-10-16T19:10:57.988700",
+      "duration": 488.890803
+    },
+    {
+      "number": 158,
+      "state": "COMPLETE",
+      "values": [
+        117.0,
+        5.459240067475276
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.047723211687340256,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T19:10:57.998708",
+      "datetime_complete": "2025-10-16T19:19:05.717961",
+      "duration": 487.719253
+    },
+    {
+      "number": 159,
+      "state": "COMPLETE",
+      "values": [
+        94.0,
+        5.8081043690864345
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.10717244700268483,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T19:19:05.730538",
+      "datetime_complete": "2025-10-16T19:27:12.738742",
+      "duration": 487.008204
+    },
+    {
+      "number": 160,
+      "state": "COMPLETE",
+      "values": [
+        117.0,
+        5.4401886388681255
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.046710004668599536,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T19:27:12.748751",
+      "datetime_complete": "2025-10-16T19:35:20.773388",
+      "duration": 488.024637
+    },
+    {
+      "number": 161,
+      "state": "COMPLETE",
+      "values": [
+        50.0,
+        5.684041679999454
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.2149549019909842,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T19:35:20.785389",
+      "datetime_complete": "2025-10-16T19:43:28.688838",
+      "duration": 487.903449
+    },
+    {
+      "number": 162,
+      "state": "COMPLETE",
+      "values": [
+        117.0,
+        5.439706423371909
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.046561420064246684,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T19:43:28.700849",
+      "datetime_complete": "2025-10-16T19:51:38.424626",
+      "duration": 489.723777
+    },
+    {
+      "number": 163,
+      "state": "COMPLETE",
+      "values": [
+        117.0,
+        5.43093627304631
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04645715160029688,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T19:51:38.435636",
+      "datetime_complete": "2025-10-16T19:59:47.286053",
+      "duration": 488.850417
+    },
+    {
+      "number": 164,
+      "state": "COMPLETE",
+      "values": [
+        103.0,
+        5.555573158300848
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0975952082643699,
+        "m0": 0.003,
+        "beta_prime": 44.35284194217316
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T19:59:47.297063",
+      "datetime_complete": "2025-10-16T20:07:54.953162",
+      "duration": 487.656099
+    },
+    {
+      "number": 165,
+      "state": "COMPLETE",
+      "values": [
+        121.0,
+        5.226413375392505
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04212746071520487,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T20:07:54.965173",
+      "datetime_complete": "2025-10-16T20:16:02.615339",
+      "duration": 487.650166
+    },
+    {
+      "number": 166,
+      "state": "COMPLETE",
+      "values": [
+        117.0,
+        5.425526227107382
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04643117996465751,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T20:16:02.627349",
+      "datetime_complete": "2025-10-16T20:24:10.234572",
+      "duration": 487.607223
+    },
+    {
+      "number": 167,
+      "state": "COMPLETE",
+      "values": [
+        75.0,
+        5.405929763353003
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.21075547479596143,
+        "m0": 0.003,
+        "beta_prime": 44.12045671965024
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T20:24:10.246582",
+      "datetime_complete": "2025-10-16T20:32:17.854757",
+      "duration": 487.608175
+    },
+    {
+      "number": 168,
+      "state": "COMPLETE",
+      "values": [
+        39.0,
+        5.2614325676165015
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.3574469494932043,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T20:32:17.865767",
+      "datetime_complete": "2025-10-16T20:40:26.690681",
+      "duration": 488.824914
+    },
+    {
+      "number": 169,
+      "state": "COMPLETE",
+      "values": [
+        118.0,
+        5.421561996454139
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.046384003327954,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T20:40:26.701690",
+      "datetime_complete": "2025-10-16T20:48:34.262747",
+      "duration": 487.561057
+    },
+    {
+      "number": 170,
+      "state": "COMPLETE",
+      "values": [
+        125.0,
+        4.617251685444007
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05951294982142976,
+        "m0": 0.003,
+        "beta_prime": 37.26769019923439
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T20:48:34.273756",
+      "datetime_complete": "2025-10-16T20:56:41.849873",
+      "duration": 487.576117
+    },
+    {
+      "number": 171,
+      "state": "COMPLETE",
+      "values": [
+        123.0,
+        3.397183957412145
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.10890911485923843,
+        "m0": 0.003,
+        "beta_prime": 20.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T20:56:41.860883",
+      "datetime_complete": "2025-10-16T21:04:50.637789",
+      "duration": 488.776906
+    },
+    {
+      "number": 172,
+      "state": "COMPLETE",
+      "values": [
+        122.0,
+        5.001828369960493
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.03529074295827235,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T21:04:50.647798",
+      "datetime_complete": "2025-10-16T21:12:57.980872",
+      "duration": 487.333074
+    },
+    {
+      "number": 173,
+      "state": "COMPLETE",
+      "values": [
+        121.0,
+        5.230229008656471
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04209370200235751,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T21:12:57.990881",
+      "datetime_complete": "2025-10-16T21:21:04.904526",
+      "duration": 486.913645
+    },
+    {
+      "number": 174,
+      "state": "COMPLETE",
+      "values": [
+        93.0,
+        5.807811100217905
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.1071452206023563,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T21:21:04.916537",
+      "datetime_complete": "2025-10-16T21:29:13.625106",
+      "duration": 488.708569
+    },
+    {
+      "number": 175,
+      "state": "COMPLETE",
+      "values": [
+        122.0,
+        5.223810426420263
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.042141790411724334,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T21:29:13.635114",
+      "datetime_complete": "2025-10-16T21:37:20.852147",
+      "duration": 487.217033
+    },
+    {
+      "number": 176,
+      "state": "COMPLETE",
+      "values": [
+        112.0,
+        5.532915576459816
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05600906008774764,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T21:37:20.864156",
+      "datetime_complete": "2025-10-16T21:45:29.019213",
+      "duration": 488.155057
+    },
+    {
+      "number": 177,
+      "state": "COMPLETE",
+      "values": [
+        121.0,
+        5.2231827717806585
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04224155261556723,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T21:45:29.029221",
+      "datetime_complete": "2025-10-16T21:53:36.338393",
+      "duration": 487.309172
+    },
+    {
+      "number": 178,
+      "state": "COMPLETE",
+      "values": [
+        100.0,
+        5.657736195882963
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0943166895342606,
+        "m0": 0.003,
+        "beta_prime": 48.80942014692427
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T21:53:36.349402",
+      "datetime_complete": "2025-10-16T22:01:45.555322",
+      "duration": 489.20592
+    },
+    {
+      "number": 179,
+      "state": "COMPLETE",
+      "values": [
+        99.0,
+        5.658789190776286
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.09409451338119237,
+        "m0": 0.003,
+        "beta_prime": 48.87111429439791
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T22:01:45.567332",
+      "datetime_complete": "2025-10-16T22:09:53.820241",
+      "duration": 488.252909
+    },
+    {
+      "number": 180,
+      "state": "COMPLETE",
+      "values": [
+        111.0,
+        5.530320365818786
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05635896473863336,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T22:09:53.830250",
+      "datetime_complete": "2025-10-16T22:18:01.262613",
+      "duration": 487.432363
+    },
+    {
+      "number": 181,
+      "state": "COMPLETE",
+      "values": [
+        125.0,
+        4.617179168982082
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.059515972382527337,
+        "m0": 0.003,
+        "beta_prime": 37.267583555039494
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T22:18:01.273621",
+      "datetime_complete": "2025-10-16T22:26:08.560788",
+      "duration": 487.287167
+    },
+    {
+      "number": 182,
+      "state": "COMPLETE",
+      "values": [
+        122.0,
+        5.227608905386951
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.042296482209895486,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T22:26:08.571798",
+      "datetime_complete": "2025-10-16T22:34:16.194818",
+      "duration": 487.62302
+    },
+    {
+      "number": 183,
+      "state": "COMPLETE",
+      "values": [
+        121.0,
+        5.226787173484901
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.042374777064161435,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T22:34:16.204827",
+      "datetime_complete": "2025-10-16T22:42:22.976684",
+      "duration": 486.771857
+    },
+    {
+      "number": 184,
+      "state": "COMPLETE",
+      "values": [
+        121.0,
+        5.226913698757049
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04241672983804265,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T22:42:22.986693",
+      "datetime_complete": "2025-10-16T22:50:30.461900",
+      "duration": 487.475207
+    },
+    {
+      "number": 185,
+      "state": "COMPLETE",
+      "values": [
+        125.0,
+        4.612852033089597
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05983696208735653,
+        "m0": 0.003,
+        "beta_prime": 37.192494260976375
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T22:50:30.472909",
+      "datetime_complete": "2025-10-16T22:58:38.506627",
+      "duration": 488.033718
+    },
+    {
+      "number": 186,
+      "state": "COMPLETE",
+      "values": [
+        113.0,
+        3.525343292613413
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.232781061617701,
+        "m0": 0.003,
+        "beta_prime": 20.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T22:58:38.516635",
+      "datetime_complete": "2025-10-16T23:06:46.088750",
+      "duration": 487.572115
+    },
+    {
+      "number": 187,
+      "state": "COMPLETE",
+      "values": [
+        122.0,
+        5.001535796363742
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.03526351096850258,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T23:06:46.098758",
+      "datetime_complete": "2025-10-16T23:14:54.112747",
+      "duration": 488.013989
+    },
+    {
+      "number": 188,
+      "state": "COMPLETE",
+      "values": [
+        122.0,
+        5.227480645232835
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04243020011696614,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T23:14:54.123757",
+      "datetime_complete": "2025-10-16T23:23:01.722366",
+      "duration": 487.598609
+    },
+    {
+      "number": 189,
+      "state": "COMPLETE",
+      "values": [
+        90.0,
+        5.810051378486577
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.109504375791102,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T23:23:01.731373",
+      "datetime_complete": "2025-10-16T23:31:09.154040",
+      "duration": 487.422667
+    },
+    {
+      "number": 190,
+      "state": "COMPLETE",
+      "values": [
+        100.0,
+        5.660921079364105
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.09430726027356283,
+        "m0": 0.003,
+        "beta_prime": 48.85044102968454
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T23:31:09.165050",
+      "datetime_complete": "2025-10-16T23:39:16.535227",
+      "duration": 487.370177
+    },
+    {
+      "number": 191,
+      "state": "COMPLETE",
+      "values": [
+        110.0,
+        5.538304706750903
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0568896054652875,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T23:39:16.547238",
+      "datetime_complete": "2025-10-16T23:47:25.169244",
+      "duration": 488.622006
+    },
+    {
+      "number": 192,
+      "state": "COMPLETE",
+      "values": [
+        125.0,
+        4.6189020887183325
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05996115179487762,
+        "m0": 0.003,
+        "beta_prime": 37.165348924500364
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T23:47:25.180254",
+      "datetime_complete": "2025-10-16T23:55:33.158863",
+      "duration": 487.978609
+    },
+    {
+      "number": 193,
+      "state": "COMPLETE",
+      "values": [
+        123.0,
+        5.233594990146313
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.042511329200650226,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-16T23:55:33.168873",
+      "datetime_complete": "2025-10-17T00:03:40.288967",
+      "duration": 487.120094
+    },
+    {
+      "number": 194,
+      "state": "COMPLETE",
+      "values": [
+        121.0,
+        5.237213421935536
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.042643618990723414,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T00:03:40.298976",
+      "datetime_complete": "2025-10-17T00:11:48.630395",
+      "duration": 488.331419
+    },
+    {
+      "number": 195,
+      "state": "COMPLETE",
+      "values": [
+        124.0,
+        4.856028036666491
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.038319153144306645,
+        "m0": 0.003,
+        "beta_prime": 48.23977264281183
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T00:11:48.641405",
+      "datetime_complete": "2025-10-17T00:19:55.348391",
+      "duration": 486.706986
+    },
+    {
+      "number": 196,
+      "state": "COMPLETE",
+      "values": [
+        124.0,
+        4.879819268769726
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.037643012671017634,
+        "m0": 0.003,
+        "beta_prime": 48.87396101291979
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T00:19:55.361402",
+      "datetime_complete": "2025-10-17T00:28:05.032032",
+      "duration": 489.67063
+    },
+    {
+      "number": 197,
+      "state": "COMPLETE",
+      "values": [
+        93.0,
+        5.81793657128633
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.10663527744946287,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T00:28:05.043043",
+      "datetime_complete": "2025-10-17T00:36:12.519827",
+      "duration": 487.476784
+    },
+    {
+      "number": 198,
+      "state": "COMPLETE",
+      "values": [
+        121.0,
+        5.350198700191974
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04277591540688677,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T00:36:12.530836",
+      "datetime_complete": "2025-10-17T00:44:19.112999",
+      "duration": 486.582163
+    },
+    {
+      "number": 199,
+      "state": "COMPLETE",
+      "values": [
+        122.0,
+        5.031015375199157
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.035636971539156626,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T00:44:19.124009",
+      "datetime_complete": "2025-10-17T00:52:26.210577",
+      "duration": 487.086568
+    },
+    {
+      "number": 200,
+      "state": "COMPLETE",
+      "values": [
+        107.0,
+        5.531703620061139
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05856396393477448,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T00:52:26.222588",
+      "datetime_complete": "2025-10-17T01:00:33.750202",
+      "duration": 487.527614
+    },
+    {
+      "number": 201,
+      "state": "COMPLETE",
+      "values": [
+        124.0,
+        4.8967480165008626
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.038033066027079725,
+        "m0": 0.003,
+        "beta_prime": 48.875398027046145
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T01:00:33.763214",
+      "datetime_complete": "2025-10-17T01:08:41.503071",
+      "duration": 487.739857
+    },
+    {
+      "number": 202,
+      "state": "COMPLETE",
+      "values": [
+        126.0,
+        4.681406766674481
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.050304450155587,
+        "m0": 0.003,
+        "beta_prime": 40.0487645182632
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T01:08:41.515081",
+      "datetime_complete": "2025-10-17T01:16:49.920175",
+      "duration": 488.405094
+    },
+    {
+      "number": 203,
+      "state": "COMPLETE",
+      "values": [
+        57.0,
+        4.452715128920689
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.5278377341079279,
+        "m0": 0.003,
+        "beta_prime": 39.1159521434292
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T01:16:49.932185",
+      "datetime_complete": "2025-10-17T01:24:57.210310",
+      "duration": 487.278125
+    },
+    {
+      "number": 204,
+      "state": "COMPLETE",
+      "values": [
+        128.0,
+        4.525708192415709
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04871869577927197,
+        "m0": 0.003,
+        "beta_prime": 38.52428199713372
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T01:24:57.222321",
+      "datetime_complete": "2025-10-17T01:33:04.883260",
+      "duration": 487.660939
+    },
+    {
+      "number": 205,
+      "state": "COMPLETE",
+      "values": [
+        128.0,
+        4.483190208009648
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0483821407171021,
+        "m0": 0.003,
+        "beta_prime": 37.44716475645039
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T01:33:04.895271",
+      "datetime_complete": "2025-10-17T01:41:13.276215",
+      "duration": 488.380944
+    },
+    {
+      "number": 206,
+      "state": "COMPLETE",
+      "values": [
+        127.0,
+        4.473805651835937
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04829261636998114,
+        "m0": 0.003,
+        "beta_prime": 37.07158258637881
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T01:41:13.286216",
+      "datetime_complete": "2025-10-17T01:49:22.959204",
+      "duration": 489.672988
+    },
+    {
+      "number": 207,
+      "state": "COMPLETE",
+      "values": [
+        129.0,
+        4.461362846415499
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04849755456593107,
+        "m0": 0.003,
+        "beta_prime": 36.63285429629468
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T01:49:22.969213",
+      "datetime_complete": "2025-10-17T01:57:31.915552",
+      "duration": 488.946339
+    },
+    {
+      "number": 208,
+      "state": "COMPLETE",
+      "values": [
+        85.0,
+        5.8135810218200765
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.11602059989068317,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T01:57:31.926561",
+      "datetime_complete": "2025-10-17T02:05:39.392649",
+      "duration": 487.466088
+    },
+    {
+      "number": 209,
+      "state": "COMPLETE",
+      "values": [
+        126.0,
+        4.642940764803052
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04970192457084353,
+        "m0": 0.003,
+        "beta_prime": 38.96572123819962
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T02:05:39.404660",
+      "datetime_complete": "2025-10-17T02:13:46.825618",
+      "duration": 487.420958
+    },
+    {
+      "number": 210,
+      "state": "COMPLETE",
+      "values": [
+        126.0,
+        4.6281406393309075
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0494598385434241,
+        "m0": 0.003,
+        "beta_prime": 38.93583983880694
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T02:13:46.837628",
+      "datetime_complete": "2025-10-17T02:21:54.237384",
+      "duration": 487.399756
+    },
+    {
+      "number": 211,
+      "state": "COMPLETE",
+      "values": [
+        126.0,
+        4.631879577058858
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04935845200357929,
+        "m0": 0.003,
+        "beta_prime": 38.89791388633701
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T02:21:54.249394",
+      "datetime_complete": "2025-10-17T02:30:02.798392",
+      "duration": 488.548998
+    },
+    {
+      "number": 212,
+      "state": "COMPLETE",
+      "values": [
+        126.0,
+        4.624880756955934
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04929390862701444,
+        "m0": 0.003,
+        "beta_prime": 38.85075822946047
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T02:30:02.809401",
+      "datetime_complete": "2025-10-17T02:38:10.234554",
+      "duration": 487.425153
+    },
+    {
+      "number": 213,
+      "state": "COMPLETE",
+      "values": [
+        124.0,
+        4.627378579291867
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04925160624376492,
+        "m0": 0.003,
+        "beta_prime": 38.81266075550816
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T02:38:10.244563",
+      "datetime_complete": "2025-10-17T02:46:19.359773",
+      "duration": 489.11521
+    },
+    {
+      "number": 214,
+      "state": "COMPLETE",
+      "values": [
+        127.0,
+        4.620457139758185
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04968502139369052,
+        "m0": 0.003,
+        "beta_prime": 38.58343749492931
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T02:46:19.370782",
+      "datetime_complete": "2025-10-17T02:54:28.227221",
+      "duration": 488.856439
+    },
+    {
+      "number": 215,
+      "state": "COMPLETE",
+      "values": [
+        81.0,
+        5.773539911790243
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.11951711787714953,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T02:54:28.238231",
+      "datetime_complete": "2025-10-17T03:02:37.006510",
+      "duration": 488.768279
+    },
+    {
+      "number": 216,
+      "state": "COMPLETE",
+      "values": [
+        98.0,
+        5.663892749493366
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.09446299919362873,
+        "m0": 0.003,
+        "beta_prime": 48.882746877830115
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T03:02:37.017519",
+      "datetime_complete": "2025-10-17T03:10:49.845203",
+      "duration": 492.827684
+    },
+    {
+      "number": 217,
+      "state": "COMPLETE",
+      "values": [
+        100.0,
+        5.6662255741711
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.09418043540275542,
+        "m0": 0.003,
+        "beta_prime": 48.909952083154245
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T03:10:49.855211",
+      "datetime_complete": "2025-10-17T03:18:58.003065",
+      "duration": 488.147854
+    },
+    {
+      "number": 218,
+      "state": "COMPLETE",
+      "values": [
+        122.0,
+        5.036959013603485
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.03571634856757433,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T03:18:58.014074",
+      "datetime_complete": "2025-10-17T03:27:05.893099",
+      "duration": 487.879025
+    },
+    {
+      "number": 219,
+      "state": "COMPLETE",
+      "values": [
+        92.0,
+        5.809921921479301
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.10859428180506922,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T03:27:05.904109",
+      "datetime_complete": "2025-10-17T03:35:14.358269",
+      "duration": 488.45416
+    },
+    {
+      "number": 220,
+      "state": "COMPLETE",
+      "values": [
+        91.0,
+        5.8082666395454705
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.10860366603866486,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T03:35:14.369278",
+      "datetime_complete": "2025-10-17T03:43:20.827896",
+      "duration": 486.458618
+    },
+    {
+      "number": 221,
+      "state": "COMPLETE",
+      "values": [
+        108.0,
+        5.52504341987185
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05846887919269611,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T03:43:20.838905",
+      "datetime_complete": "2025-10-17T03:51:26.978614",
+      "duration": 486.139709
+    },
+    {
+      "number": 222,
+      "state": "COMPLETE",
+      "values": [
+        123.0,
+        4.901931871959357
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.038229097666007524,
+        "m0": 0.003,
+        "beta_prime": 48.94013679967016
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T03:51:26.990625",
+      "datetime_complete": "2025-10-17T03:59:33.822776",
+      "duration": 486.832151
+    },
+    {
+      "number": 223,
+      "state": "COMPLETE",
+      "values": [
+        99.0,
+        5.662398195797099
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.09388015229559964,
+        "m0": 0.003,
+        "beta_prime": 48.97820959478901
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T03:59:33.833785",
+      "datetime_complete": "2025-10-17T04:07:41.063286",
+      "duration": 487.229501
+    },
+    {
+      "number": 224,
+      "state": "COMPLETE",
+      "values": [
+        127.0,
+        4.425997731162475
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04690907667997272,
+        "m0": 0.003,
+        "beta_prime": 36.13330891036651
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T04:07:41.074296",
+      "datetime_complete": "2025-10-17T04:15:48.624389",
+      "duration": 487.550093
+    },
+    {
+      "number": 225,
+      "state": "COMPLETE",
+      "values": [
+        107.0,
+        5.558711908603639
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0949214159924363,
+        "m0": 0.003,
+        "beta_prime": 44.789946576759476
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T04:15:48.636399",
+      "datetime_complete": "2025-10-17T04:23:56.173350",
+      "duration": 487.536951
+    },
+    {
+      "number": 226,
+      "state": "COMPLETE",
+      "values": [
+        114.0,
+        5.505561369969504
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04972130150643253,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T04:23:56.185360",
+      "datetime_complete": "2025-10-17T04:32:04.253200",
+      "duration": 488.06784
+    },
+    {
+      "number": 227,
+      "state": "COMPLETE",
+      "values": [
+        97.0,
+        5.670518357523801
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.09266416489264502,
+        "m0": 0.003,
+        "beta_prime": 49.129158103064775
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T04:32:04.264209",
+      "datetime_complete": "2025-10-17T04:40:12.474394",
+      "duration": 488.210185
+    },
+    {
+      "number": 228,
+      "state": "COMPLETE",
+      "values": [
+        106.0,
+        5.5710214954571295
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0954643461968952,
+        "m0": 0.003,
+        "beta_prime": 44.876460718525855
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T04:40:12.485403",
+      "datetime_complete": "2025-10-17T04:48:19.602327",
+      "duration": 487.116924
+    },
+    {
+      "number": 229,
+      "state": "COMPLETE",
+      "values": [
+        45.0,
+        5.386069843483471
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.28612161366747235,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T04:48:19.614338",
+      "datetime_complete": "2025-10-17T04:56:26.698650",
+      "duration": 487.084312
+    },
+    {
+      "number": 230,
+      "state": "COMPLETE",
+      "values": [
+        79.0,
+        5.5881542737350784
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.15085030197770713,
+        "m0": 0.003,
+        "beta_prime": 46.025429397375255
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T04:56:26.708658",
+      "datetime_complete": "2025-10-17T05:04:34.292382",
+      "duration": 487.583724
+    },
+    {
+      "number": 231,
+      "state": "COMPLETE",
+      "values": [
+        111.0,
+        5.537061914502749
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.052696607499652964,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T05:04:34.303392",
+      "datetime_complete": "2025-10-17T05:12:40.506026",
+      "duration": 486.202634
+    },
+    {
+      "number": 232,
+      "state": "COMPLETE",
+      "values": [
+        113.0,
+        5.510632333368493
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.049447479225851035,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T05:12:40.518037",
+      "datetime_complete": "2025-10-17T05:20:47.175666",
+      "duration": 486.657629
+    },
+    {
+      "number": 233,
+      "state": "COMPLETE",
+      "values": [
+        112.0,
+        5.531605303695036
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05227229006381086,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T05:20:47.187676",
+      "datetime_complete": "2025-10-17T05:28:53.768554",
+      "duration": 486.580878
+    },
+    {
+      "number": 234,
+      "state": "COMPLETE",
+      "values": [
+        112.0,
+        5.53452312589945
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.052190681338450534,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T05:28:53.781565",
+      "datetime_complete": "2025-10-17T05:37:00.976203",
+      "duration": 487.194638
+    },
+    {
+      "number": 235,
+      "state": "COMPLETE",
+      "values": [
+        85.0,
+        4.898267507136365
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.2627365290929324,
+        "m0": 0.003,
+        "beta_prime": 37.02347016818723
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T05:37:00.988213",
+      "datetime_complete": "2025-10-17T05:45:07.932227",
+      "duration": 486.944014
+    },
+    {
+      "number": 236,
+      "state": "COMPLETE",
+      "values": [
+        128.0,
+        4.393533958358998
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04657009334875847,
+        "m0": 0.003,
+        "beta_prime": 35.75859212963417
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T05:45:07.943237",
+      "datetime_complete": "2025-10-17T05:53:16.128319",
+      "duration": 488.185082
+    },
+    {
+      "number": 237,
+      "state": "COMPLETE",
+      "values": [
+        95.0,
+        5.809749511123584
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.10465919287230817,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T05:53:16.138328",
+      "datetime_complete": "2025-10-17T06:01:22.719879",
+      "duration": 486.581551
+    },
+    {
+      "number": 238,
+      "state": "COMPLETE",
+      "values": [
+        54.0,
+        4.779076057845768
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.4700072537382749,
+        "m0": 0.003,
+        "beta_prime": 41.51775960539113
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T06:01:22.729887",
+      "datetime_complete": "2025-10-17T06:09:30.083136",
+      "duration": 487.353249
+    },
+    {
+      "number": 239,
+      "state": "COMPLETE",
+      "values": [
+        95.0,
+        5.798457468320066
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.10500659820014648,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T06:09:30.094146",
+      "datetime_complete": "2025-10-17T06:17:37.264074",
+      "duration": 487.169928
+    },
+    {
+      "number": 240,
+      "state": "COMPLETE",
+      "values": [
+        98.0,
+        5.640961838265062
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.10330393001528394,
+        "m0": 0.003,
+        "beta_prime": 46.610715570704336
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T06:17:37.276084",
+      "datetime_complete": "2025-10-17T06:25:43.787590",
+      "duration": 486.511506
+    },
+    {
+      "number": 241,
+      "state": "COMPLETE",
+      "values": [
+        63.0,
+        4.909472905079566
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.3842309584308057,
+        "m0": 0.003,
+        "beta_prime": 41.3021338585187
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T06:25:43.798600",
+      "datetime_complete": "2025-10-17T06:33:52.297673",
+      "duration": 488.499073
+    },
+    {
+      "number": 242,
+      "state": "COMPLETE",
+      "values": [
+        122.0,
+        5.0249301493831835
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.03555737825817478,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T06:33:52.308682",
+      "datetime_complete": "2025-10-17T06:42:02.003094",
+      "duration": 489.694412
+    },
+    {
+      "number": 243,
+      "state": "COMPLETE",
+      "values": [
+        112.0,
+        5.5348752758553825
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05211373716644266,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T06:42:02.014104",
+      "datetime_complete": "2025-10-17T06:50:08.436874",
+      "duration": 486.42277
+    },
+    {
+      "number": 244,
+      "state": "COMPLETE",
+      "values": [
+        113.0,
+        5.534799593447775
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.052017342508456875,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T06:50:08.446883",
+      "datetime_complete": "2025-10-17T06:58:14.703426",
+      "duration": 486.256543
+    },
+    {
+      "number": 245,
+      "state": "COMPLETE",
+      "values": [
+        45.0,
+        5.621673304775561
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.2313919906576744,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T06:58:14.714436",
+      "datetime_complete": "2025-10-17T07:06:22.394730",
+      "duration": 487.680294
+    },
+    {
+      "number": 246,
+      "state": "COMPLETE",
+      "values": [
+        111.0,
+        5.544733649070128
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05459022939653144,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T07:06:22.406741",
+      "datetime_complete": "2025-10-17T07:14:29.869686",
+      "duration": 487.462945
+    },
+    {
+      "number": 247,
+      "state": "COMPLETE",
+      "values": [
+        98.0,
+        5.7163474608451565
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.08879875784756695,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T07:14:29.881696",
+      "datetime_complete": "2025-10-17T07:22:38.715001",
+      "duration": 488.833305
+    },
+    {
+      "number": 248,
+      "state": "COMPLETE",
+      "values": [
+        114.0,
+        5.503041659491145
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04907127032144765,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T07:22:38.725010",
+      "datetime_complete": "2025-10-17T07:30:45.791827",
+      "duration": 487.066817
+    },
+    {
+      "number": 249,
+      "state": "COMPLETE",
+      "values": [
+        113.0,
+        5.536661989962618
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05123844907354268,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T07:30:45.801836",
+      "datetime_complete": "2025-10-17T07:38:52.683008",
+      "duration": 486.881172
+    },
+    {
+      "number": 250,
+      "state": "COMPLETE",
+      "values": [
+        112.0,
+        5.539257616706806
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05116102249125801,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T07:38:52.693017",
+      "datetime_complete": "2025-10-17T07:47:00.667022",
+      "duration": 487.974005
+    },
+    {
+      "number": 251,
+      "state": "COMPLETE",
+      "values": [
+        113.0,
+        5.539002463958449
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05107160251088389,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T07:47:00.678031",
+      "datetime_complete": "2025-10-17T07:55:07.509065",
+      "duration": 486.831034
+    },
+    {
+      "number": 252,
+      "state": "COMPLETE",
+      "values": [
+        122.0,
+        5.021645438088566
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.035432378081642846,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T07:55:07.521075",
+      "datetime_complete": "2025-10-17T08:03:14.540878",
+      "duration": 487.019803
+    },
+    {
+      "number": 253,
+      "state": "COMPLETE",
+      "values": [
+        88.0,
+        5.811288623948176
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.1103310671553761,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T08:03:14.553889",
+      "datetime_complete": "2025-10-17T08:11:22.777060",
+      "duration": 488.223171
+    },
+    {
+      "number": 254,
+      "state": "COMPLETE",
+      "values": [
+        111.0,
+        5.553888293522028
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.054144140065611995,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T08:11:22.787069",
+      "datetime_complete": "2025-10-17T08:19:30.241632",
+      "duration": 487.454563
+    },
+    {
+      "number": 255,
+      "state": "COMPLETE",
+      "values": [
+        93.0,
+        5.8281806688614255
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.10378058478795997,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T08:19:30.253642",
+      "datetime_complete": "2025-10-17T08:27:37.566546",
+      "duration": 487.312904
+    },
+    {
+      "number": 256,
+      "state": "COMPLETE",
+      "values": [
+        122.0,
+        5.003561176437449
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.03530276907085849,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T08:27:37.578557",
+      "datetime_complete": "2025-10-17T08:35:45.404756",
+      "duration": 487.826199
+    },
+    {
+      "number": 257,
+      "state": "COMPLETE",
+      "values": [
+        113.0,
+        5.505374835821359
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.048828999917119836,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T08:35:45.414764",
+      "datetime_complete": "2025-10-17T08:43:52.688468",
+      "duration": 487.273704
+    },
+    {
+      "number": 258,
+      "state": "COMPLETE",
+      "values": [
+        126.0,
+        4.37990670372224
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04684427784268222,
+        "m0": 0.003,
+        "beta_prime": 35.50177598969423
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T08:43:52.700478",
+      "datetime_complete": "2025-10-17T08:52:01.946029",
+      "duration": 489.245551
+    },
+    {
+      "number": 259,
+      "state": "COMPLETE",
+      "values": [
+        112.0,
+        5.540748356920679
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05320456844169458,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T08:52:01.957038",
+      "datetime_complete": "2025-10-17T09:00:09.458556",
+      "duration": 487.501518
+    },
+    {
+      "number": 260,
+      "state": "COMPLETE",
+      "values": [
+        126.0,
+        4.778661964622168
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04596064643979024,
+        "m0": 0.003,
+        "beta_prime": 42.674122809451845
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T09:00:09.468565",
+      "datetime_complete": "2025-10-17T09:08:16.403082",
+      "duration": 486.934517
+    },
+    {
+      "number": 261,
+      "state": "COMPLETE",
+      "values": [
+        124.0,
+        4.818714115063484
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04554937050114249,
+        "m0": 0.003,
+        "beta_prime": 43.50583611836278
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T09:08:16.414091",
+      "datetime_complete": "2025-10-17T09:16:23.989562",
+      "duration": 487.575471
+    },
+    {
+      "number": 262,
+      "state": "COMPLETE",
+      "values": [
+        124.0,
+        4.815536470263638
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04560947058054939,
+        "m0": 0.003,
+        "beta_prime": 43.42091960180061
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T09:16:24.000571",
+      "datetime_complete": "2025-10-17T09:24:31.219994",
+      "duration": 487.219423
+    },
+    {
+      "number": 263,
+      "state": "COMPLETE",
+      "values": [
+        114.0,
+        5.501431210625249
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04875610819024127,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T09:24:31.231004",
+      "datetime_complete": "2025-10-17T09:32:38.609921",
+      "duration": 487.378917
+    },
+    {
+      "number": 264,
+      "state": "COMPLETE",
+      "values": [
+        124.0,
+        4.808368820127889
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.045642211854039785,
+        "m0": 0.003,
+        "beta_prime": 43.33980800061514
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T09:32:38.619929",
+      "datetime_complete": "2025-10-17T09:40:47.305115",
+      "duration": 488.685186
+    },
+    {
+      "number": 265,
+      "state": "COMPLETE",
+      "values": [
+        115.0,
+        5.503054962861332
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0486988594168226,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T09:40:47.316124",
+      "datetime_complete": "2025-10-17T09:48:54.917831",
+      "duration": 487.601707
+    },
+    {
+      "number": 266,
+      "state": "COMPLETE",
+      "values": [
+        124.0,
+        4.811380744821106
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04564031546123722,
+        "m0": 0.003,
+        "beta_prime": 43.30948086714025
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T09:48:54.929841",
+      "datetime_complete": "2025-10-17T09:57:02.380718",
+      "duration": 487.450877
+    },
+    {
+      "number": 267,
+      "state": "COMPLETE",
+      "values": [
+        125.0,
+        4.808866748310556
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04568485884083134,
+        "m0": 0.003,
+        "beta_prime": 43.25422456732799
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T09:57:02.393730",
+      "datetime_complete": "2025-10-17T10:05:10.072155",
+      "duration": 487.678425
+    },
+    {
+      "number": 268,
+      "state": "COMPLETE",
+      "values": [
+        123.0,
+        4.9096745005625415
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.037877863000777626,
+        "m0": 0.003,
+        "beta_prime": 49.11843944723361
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T10:05:10.082164",
+      "datetime_complete": "2025-10-17T10:13:18.038657",
+      "duration": 487.956493
+    },
+    {
+      "number": 269,
+      "state": "COMPLETE",
+      "values": [
+        125.0,
+        4.589158278088373
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04507042535155212,
+        "m0": 0.003,
+        "beta_prime": 40.476440995494315
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T10:13:18.049667",
+      "datetime_complete": "2025-10-17T10:21:26.456381",
+      "duration": 488.406714
+    },
+    {
+      "number": 270,
+      "state": "COMPLETE",
+      "values": [
+        114.0,
+        5.526268845078212
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05078460982857569,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T10:21:26.467390",
+      "datetime_complete": "2025-10-17T10:29:36.068676",
+      "duration": 489.601286
+    },
+    {
+      "number": 271,
+      "state": "COMPLETE",
+      "values": [
+        111.0,
+        5.53888309787803
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.053085397757589574,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T10:29:36.078684",
+      "datetime_complete": "2025-10-17T10:37:45.663999",
+      "duration": 489.585315
+    },
+    {
+      "number": 272,
+      "state": "COMPLETE",
+      "values": [
+        111.0,
+        5.538254535021741
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05309914207860002,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T10:37:45.676009",
+      "datetime_complete": "2025-10-17T10:45:54.562686",
+      "duration": 488.886677
+    },
+    {
+      "number": 273,
+      "state": "COMPLETE",
+      "values": [
+        124.0,
+        4.9075723498477934
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.03793747879782683,
+        "m0": 0.003,
+        "beta_prime": 49.1191337102308
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T10:45:54.575697",
+      "datetime_complete": "2025-10-17T10:54:03.490281",
+      "duration": 488.914584
+    },
+    {
+      "number": 274,
+      "state": "COMPLETE",
+      "values": [
+        114.0,
+        5.493917111331433
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04863423502769193,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T10:54:03.502291",
+      "datetime_complete": "2025-10-17T11:02:12.063998",
+      "duration": 488.561707
+    },
+    {
+      "number": 275,
+      "state": "COMPLETE",
+      "values": [
+        110.0,
+        5.531847801485479
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05304093878916112,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T11:02:12.074007",
+      "datetime_complete": "2025-10-17T11:10:21.287791",
+      "duration": 489.213784
+    },
+    {
+      "number": 276,
+      "state": "COMPLETE",
+      "values": [
+        100.0,
+        5.677442647251191
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.08374871595552581,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T11:10:21.297800",
+      "datetime_complete": "2025-10-17T11:18:29.981753",
+      "duration": 488.683953
+    },
+    {
+      "number": 277,
+      "state": "COMPLETE",
+      "values": [
+        96.0,
+        4.806373890073001
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.1847275270580122,
+        "m0": 0.003,
+        "beta_prime": 34.949005178814815
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T11:18:29.993764",
+      "datetime_complete": "2025-10-17T11:26:38.593830",
+      "duration": 488.600066
+    },
+    {
+      "number": 278,
+      "state": "COMPLETE",
+      "values": [
+        123.0,
+        4.919278219452112
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.03785236678337067,
+        "m0": 0.003,
+        "beta_prime": 49.22999432894058
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T11:26:38.604839",
+      "datetime_complete": "2025-10-17T11:34:48.476674",
+      "duration": 489.871835
+    },
+    {
+      "number": 279,
+      "state": "COMPLETE",
+      "values": [
+        115.0,
+        5.487599147992461
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.048573155058114506,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T11:34:48.487683",
+      "datetime_complete": "2025-10-17T11:42:56.868014",
+      "duration": 488.380331
+    },
+    {
+      "number": 280,
+      "state": "COMPLETE",
+      "values": [
+        98.0,
+        5.716506762256489
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.08880345917605639,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T11:42:56.880024",
+      "datetime_complete": "2025-10-17T11:51:05.402005",
+      "duration": 488.521981
+    },
+    {
+      "number": 281,
+      "state": "COMPLETE",
+      "values": [
+        97.0,
+        5.725011149756352
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.08889132132720587,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T11:51:05.413014",
+      "datetime_complete": "2025-10-17T11:59:15.349206",
+      "duration": 489.936192
+    },
+    {
+      "number": 282,
+      "state": "COMPLETE",
+      "values": [
+        123.0,
+        4.919396805613946
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0378916145620903,
+        "m0": 0.003,
+        "beta_prime": 49.23092817341207
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T11:59:15.361216",
+      "datetime_complete": "2025-10-17T12:07:23.551051",
+      "duration": 488.189835
+    },
+    {
+      "number": 283,
+      "state": "COMPLETE",
+      "values": [
+        115.0,
+        5.4870156973628115
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.048548683167764284,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T12:07:23.562060",
+      "datetime_complete": "2025-10-17T12:15:33.045159",
+      "duration": 489.483099
+    },
+    {
+      "number": 284,
+      "state": "COMPLETE",
+      "values": [
+        115.0,
+        5.48896921539913
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.048527576775903504,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T12:15:33.057169",
+      "datetime_complete": "2025-10-17T12:23:41.752708",
+      "duration": 488.695539
+    },
+    {
+      "number": 285,
+      "state": "COMPLETE",
+      "values": [
+        129.0,
+        3.9501318787318542
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.06829374301329481,
+        "m0": 0.003,
+        "beta_prime": 26.774157081096426
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T12:23:41.764719",
+      "datetime_complete": "2025-10-17T12:31:50.164535",
+      "duration": 488.399816
+    },
+    {
+      "number": 286,
+      "state": "COMPLETE",
+      "values": [
+        80.0,
+        5.169042365827684
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.23424982684629445,
+        "m0": 0.003,
+        "beta_prime": 40.452718694375974
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T12:31:50.175545",
+      "datetime_complete": "2025-10-17T12:39:59.095728",
+      "duration": 488.920183
+    },
+    {
+      "number": 287,
+      "state": "COMPLETE",
+      "values": [
+        112.0,
+        5.526492041393231
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05297405001001406,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T12:39:59.105736",
+      "datetime_complete": "2025-10-17T12:48:08.706223",
+      "duration": 489.600487
+    },
+    {
+      "number": 288,
+      "state": "FAIL",
+      "values": null,
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.037444069771083284,
+        "m0": 0.003,
+        "beta_prime": 49.35957284779941
+      },
+      "user_attrs": {},
+      "system_attrs": {},
+      "datetime_start": "2025-10-17T12:48:08.717232",
+      "datetime_complete": "2025-10-17T12:50:49.339087",
+      "duration": 160.621855
+    }
+  ],
+  "pareto_front": [
+    {
+      "number": 4,
+      "values": [
+        133.0,
+        4.030083958029231
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04506929836123935,
+        "m0": 0.003,
+        "beta_prime": 32.34871107894818
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 26,
+      "values": [
+        96.0,
+        5.8026366623884496
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.105042265769195,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 33,
+      "values": [
+        130.0,
+        4.321995600973285
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.056463029476446575,
+        "m0": 0.003,
+        "beta_prime": 33.86198235645725
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 34,
+      "values": [
+        105.0,
+        5.622819967074256
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0938844665069545,
+        "m0": 0.003,
+        "beta_prime": 47.05725522383744
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 64,
+      "values": [
+        99.0,
+        5.712231180793505
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0902707206768704,
+        "m0": 0.003,
+        "beta_prime": 49.49799329650253
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 76,
+      "values": [
+        98.0,
+        5.794154936291955
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.09285574544823748,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 103,
+      "values": [
+        101.0,
+        5.669671425844567
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.09024602178614667,
+        "m0": 0.003,
+        "beta_prime": 49.12202577043888
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 116,
+      "values": [
+        115.0,
+        5.508419573964327
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.050071902557984556,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 120,
+      "values": [
+        120.0,
+        5.3805513304359005
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04352969768486465,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 127,
+      "values": [
+        116.0,
+        5.463703877362269
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.048200732896339776,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 140,
+      "values": [
+        131.0,
+        4.213318903554214
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04886963996363043,
+        "m0": 0.003,
+        "beta_prime": 32.626054071837316
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 144,
+      "values": [
+        103.0,
+        5.651632095001973
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0976681079915823,
+        "m0": 0.003,
+        "beta_prime": 47.14606702343568
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 152,
+      "values": [
+        94.0,
+        5.811040254453093
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.10693249499289897,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 158,
+      "values": [
+        117.0,
+        5.459240067475276
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.047723211687340256,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 169,
+      "values": [
+        118.0,
+        5.421561996454139
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.046384003327954,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 193,
+      "values": [
+        123.0,
+        5.233594990146313
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.042511329200650226,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 198,
+      "values": [
+        121.0,
+        5.350198700191974
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04277591540688677,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 204,
+      "values": [
+        128.0,
+        4.525708192415709
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04871869577927197,
+        "m0": 0.003,
+        "beta_prime": 38.52428199713372
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 207,
+      "values": [
+        129.0,
+        4.461362846415499
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04849755456593107,
+        "m0": 0.003,
+        "beta_prime": 36.63285429629468
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 214,
+      "values": [
+        127.0,
+        4.620457139758185
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04968502139369052,
+        "m0": 0.003,
+        "beta_prime": 38.58343749492931
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 225,
+      "values": [
+        107.0,
+        5.558711908603639
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0949214159924363,
+        "m0": 0.003,
+        "beta_prime": 44.789946576759476
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 228,
+      "values": [
+        106.0,
+        5.5710214954571295
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.0954643461968952,
+        "m0": 0.003,
+        "beta_prime": 44.876460718525855
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 237,
+      "values": [
+        95.0,
+        5.809749511123584
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.10465919287230817,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 251,
+      "values": [
+        113.0,
+        5.539002463958449
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05107160251088389,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 254,
+      "values": [
+        111.0,
+        5.553888293522028
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.054144140065611995,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 255,
+      "values": [
+        93.0,
+        5.8281806688614255
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.10378058478795997,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 259,
+      "values": [
+        112.0,
+        5.540748356920679
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05320456844169458,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 260,
+      "values": [
+        126.0,
+        4.778661964622168
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04596064643979024,
+        "m0": 0.003,
+        "beta_prime": 42.674122809451845
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 267,
+      "values": [
+        125.0,
+        4.808866748310556
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.04568485884083134,
+        "m0": 0.003,
+        "beta_prime": 43.25422456732799
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 270,
+      "values": [
+        114.0,
+        5.526268845078212
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.05078460982857569,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 273,
+      "values": [
+        124.0,
+        4.9075723498477934
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.03793747879782683,
+        "m0": 0.003,
+        "beta_prime": 49.1191337102308
+      },
+      "user_attrs": {}
+    },
+    {
+      "number": 276,
+      "values": [
+        100.0,
+        5.677442647251191
+      ],
+      "params": {
+        "gamma": 0.05,
+        "theta": 0.08374871595552581,
+        "m0": 0.003,
+        "beta_prime": 50.0
+      },
+      "user_attrs": {}
+    }
+  ],
+  "metadata": {
+    "save_timestamp": "2025-10-17T12:51:16.405092",
+    "optuna_version": "4.4.0"
+  }
+}
