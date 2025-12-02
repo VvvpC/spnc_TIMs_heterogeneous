@@ -131,10 +131,10 @@ if __name__ == "__main__":
     from res_configs import ResConfigs, TempConfigs, TIMsConfigs, Params
 
     # 1. Configs
-    params_configs = Params(Nvirt=1, m0=0.01)
+    params_configs = Params(Nvirt=1, m0=0.03)
 
     # 2. ResConfigs
-    weights = [0.2, 0.2, 0.4, 0.2, 0.2]
+    weights = [0.2, 0.2, 0.8, 0.2, 0.2]
     res_configs_hetero = ResConfigs(morph_type='heterogeneous', n_instances=5, size_range=(-3, 3), weights=weights)
     res_configs_hetero.beta_size_ref = 20 
 
@@ -155,7 +155,7 @@ if __name__ == "__main__":
     input_signal = np.random.rand(100, 1) - 0.5
 
     # 5. transform the signal
-    env_temp = 1
+    env_temp = 25
     S_hetero, J_hetero = spn_hetero.transform(input_signal, env_temp)
     S_uniform, J_uniform = spn_uniform.transform(input_signal, env_temp)
 
