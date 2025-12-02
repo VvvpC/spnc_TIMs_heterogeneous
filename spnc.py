@@ -496,10 +496,9 @@ class spnc_anisotropy:
 
     omega_ref: the omega value at reference(training) temperature
     '''
-    def get_omega_ref(self, T_ref, h_ref):
-        ref = spnc_anisotropy(h_ref, 90, 0, 45, T_ref)
+    def get_omega_ref(self, beta_size_ref):
+        ref = spnc_anisotropy(0.4, 90, 0, 45, beta_size_ref)
         omega_ref = ref.get_omega_prime()
-
         return(omega_ref)
     
     def get_signal_slow_delayed_feedback_heteroRes_sameinput(self, K_s, params, beta_ref, h, *args,**kwargs):
@@ -647,18 +646,18 @@ class spnc_anisotropy:
 
     '''
 
-    def get_omega_cons(self, beta_cons):
-        cons = spnc_anisotropy(0.4, 90, 0, 45, beta_cons)
-        omega_cons = cons.get_omega_prime()
-        return(omega_cons)
+    def get_omega_ref(self, beta_size_ref):
+        ref = spnc_anisotropy(0.4, 90, 0, 45, beta_size_ref)
+        omega_ref = ref.get_omega_prime()
+        return(omega_ref)
 
     '''
     set new functions for calculate the magnetisation with omega_cons by using a slow way
     '''
 
-    def gen_signal_slow_delayed_feedback_omegacons(self, K_s, params, beta_cons, *args,**kwargs):
-        omega_cons = self.get_omega_cons(beta_cons)
-        delta = omega_cons / (self.get_omega_prime())
+    def gen_signal_slow_delayed_feedback_omegaref(self, K_s, params, beta_size_ref, *args,**kwargs):
+        omega_ref = self.get_omega_ref(beta_size_ref)
+        delta = omega_ref / (self.get_omega_prime())
 
         theta_T = params['theta']
         self.k_s = 0
@@ -679,9 +678,9 @@ class spnc_anisotropy:
 
         return mag
 
-    def gen_signal_fast_delayed_feedback_omegacons(self, K_s, params, beta_cons, *args,**kwargs):
-        omega_cons = self.get_omega_cons(beta_cons)
-        delta = omega_cons / (self.get_omega_prime())
+    def gen_signal_fast_delayed_feedback_omegaref(self, K_s, params, beta_size_ref, *args,**kwargs):
+        omega_ref = self.get_omega_ref(beta_size_ref)
+        delta = omega_ref / (self.get_omega_prime())
 
         theta_T = params['theta']
         self.k_s = 0
@@ -701,7 +700,7 @@ class spnc_anisotropy:
 
         return mag
 
-    def gen_trace_slow_delayed_feedback_omegacons(self,klist,theta,density,params,beta_cons,*args,**kwargs):
+    def gen_trace_slow_delayed_feedback_omegaref(self,klist,theta,density,params,beta_size_ref,*args,**kwargs):
             theta_step = theta/density
             K_s_expanded = np.zeros(np.size(klist)*density)
             thetas = np.zeros(np.size(K_s_expanded))
@@ -715,7 +714,7 @@ class spnc_anisotropy:
             params['theta'] = theta_step
             
 
-            mags = self.gen_signal_slow_delayed_feedback_omegacons(K_s_expanded, params,beta_cons)
+            mags = self.gen_signal_slow_delayed_feedback_omegaref(K_s_expanded, params,beta_size_ref)
 
             K_s = np.concatenate([np.array([0]),K_s_expanded],axis=0)
             thetas = np.concatenate([np.array([0]),thetas],axis=0)
