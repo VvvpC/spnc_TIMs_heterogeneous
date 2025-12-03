@@ -14,8 +14,8 @@ import numpy as np
 @dataclass
 class ResConfigs: # 这个类是用来配置储层的形貌
     morph_type: str # 'uniform', 'heterogeneous'
-    n_instances: int = 1 # 异质储层中的实例数量（仅用于'gradient', 'normaldistribution', 'random'）
-    size_range: tuple[float, float] = (-5, 5) # 异质点尺寸范围，注意与温度变化范围区别
+    n_instances: int = 1 
+    size_range: tuple[float, float] = (20, 30) # 异质点尺寸范围，注意与温度变化范围区别
     weights: list[float] | None = None # 权重范围
     random_seed: int = 1234 # 随机种子
     beta_size_ref: Optional[float] = None # 纳米点基准尺寸
@@ -123,7 +123,7 @@ class Configs:
         # 2. 温度
         info.append(f"Temperature mode: {self.temp_configs.temp_mode}")
         if self.temp_configs.temp_mode == 'stable':
-            info.append(f"Temperature: {self.temp_configs.temp_ref}")
+            info.append(f"Temperature: {self.temp_configs.beta_temp_ref}")
         elif self.temp_configs.temp_mode == 'temp_sweep':
             info.append(f"Temperature list: {self.temp_configs.gen_temp_list()}")
 

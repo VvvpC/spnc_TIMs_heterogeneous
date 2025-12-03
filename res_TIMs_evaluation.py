@@ -55,12 +55,6 @@ class TIMsEvaluation:
                 else:
                     filename_parts.append(f"sr{s_range}")
 
-                t_range = self.temp_configs.temp_range
-                if isinstance(t_range, (list, tuple)) and len(t_range) == 3:
-                    filename_parts.append(f"tr{t_range[0]}to{t_range[1]}s{t_range[2]}")
-                else:
-                    filename_parts.append(f"tr{t_range}")
-
                 # weights -> 格式化为 "w0.2-0.2-0.6" 或 "wUniform"
                 weights = self.res_configs.weights
                 if weights:
@@ -80,6 +74,12 @@ class TIMsEvaluation:
             # 兼容 temp_ref 和 beta_temp_ref 两种命名
             beta_temp = getattr(self.temp_configs, 'beta_temp_ref', getattr(self.temp_configs, 'temp_ref', 'NA'))
             temp_mode = getattr(self.temp_configs, 'temp_mode', 'NA')
+            t_range = self.temp_configs.temp_range
+            if isinstance(t_range, (list, tuple)) and len(t_range) == 3:
+                    filename_parts.append(f"tr{t_range[0]}to{t_range[1]}s{t_range[2]}")
+            else:
+                    filename_parts.append(f"tr{t_range}")
+
 
 
             filename_parts.append(f"bs{beta_size}")
@@ -193,10 +193,10 @@ if __name__ == '__main__':
     # 形貌配置
 
     res_configs = ResConfigs(
-        morph_type='heterogeneous',
-        n_instances=3,
-        size_range=(-3, 3), 
-        weights=[0.2, 0.2, 0.8]
+        morph_type='uniform',
+        # n_instances=3,
+        # size_range=(-3, 3), 
+        # weights=[0.2, 0.2, 0.8]
         )
     res_configs.beta_size_ref = 20
 

@@ -48,7 +48,7 @@ class binary_mask:
 
 class single_node_heteroreservoir:
 
-    def __init__(self, Nin, Nvirt, Nout, m0, beta_prime, beta_size_ref, deltabeta_list, dilution = 1.0, identity = False, ravel_order = 'c',**kwargs):
+    def __init__(self, Nin, Nvirt, Nout, m0, beta_prime, beta_size_ref, size_list, dilution = 1.0, identity = False, ravel_order = 'c',**kwargs):
 
         self.Nvirt = Nvirt
         self.beta_prime = beta_prime
@@ -59,11 +59,11 @@ class single_node_heteroreservoir:
 
         self.anisotropy_instances = [
             spnc_anisotropy(0.4, 90, 0, 45, 
-            self.beta_size_ref + delta, 
-            restart = True, 
-            Primep1 = None) 
-            for delta in deltabeta_list
-            ]
+            size, 
+            restart=True, 
+            Primep1=None) 
+            for size in size_list
+        ]
 
     def transform(self, x, params, *weights, force_compute=False, nthreads=1):
             """

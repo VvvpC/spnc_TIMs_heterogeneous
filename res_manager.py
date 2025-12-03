@@ -24,10 +24,10 @@ class ResManager:
                 raise ValueError("size_range and n_instances are required for heterogeneous reservoir")
             if self.res_configs.random_seed is not None:
                 np.random.seed(self.res_configs.random_seed)
-            delta_min = self.res_configs.size_range[0]
-            delta_max = self.res_configs.size_range[1] 
+            size_min = self.res_configs.size_range[0]
+            size_max = self.res_configs.size_range[1] 
 
-            return np.random.uniform(delta_min, delta_max, self.res_configs.n_instances).tolist()
+            return np.random.uniform(size_min, size_max, self.res_configs.n_instances).tolist()
 
     def _gen_weights(self):
         if self.res_configs.morph_type == 'uniform':
@@ -48,9 +48,9 @@ class ResManager:
     # 而基准温度变化使用temp_range缩放beta_temp_ref来体现
 
         if self.res_configs.beta_size_ref is None:
-            self.res_configs.beta_size_ref = self.params_configs.beta_prime
+            self.res_configs.beta_size_ref = self.params_configs.beta_prime # 默认使用params_configs.beta_prime
         if self.temp_configs.beta_temp_ref is None:
-            self.temp_configs.beta_temp_ref = self.params_configs.beta_prime
+            self.temp_configs.beta_temp_ref = self.params_configs.beta_prime # 默认使用params_configs.beta_prime
 
         if self.mask_object is None:
             seed = 1234
@@ -70,14 +70,14 @@ class ResManager:
         elif self.res_configs.morph_type == 'heterogeneous':
 
             # 0. 计算纳米点基准尺寸变化
-            deltabeta_list = self._gen_hetero_size()
+            size_list = self._gen_hetero_size()
 
             # 1. 计算温度缩放比例：当前temp除以beta_temp_ref
             beta_temp_ref = self.temp_configs.beta_temp_ref
             temp_scale = env_temp / beta_temp_ref
 
             # 2. 对所有子储层进行温度缩放
-            deltabeta_list_temp = [delta * temp_scale for delta in deltabeta_list]
+            size_list_temp = [size * temp_scale for size in size_list]
 
             # 3. 构建子储层
             hetero = single_node_heteroreservoir(
@@ -87,7 +87,7 @@ class ResManager:
                 m0=self.params_configs.m0,
                 beta_prime=self.params_configs.beta_prime,
                 beta_size_ref=self.res_configs.beta_size_ref,
-                deltabeta_list=deltabeta_list_temp
+                size_list=size_list_temp
             )
 
             return hetero
