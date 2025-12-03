@@ -146,45 +146,45 @@ class ResManager:
 
 
 #----测试代码----#
-if __name__ == "__main__":
-    from res_configs import ResConfigs, TempConfigs, TIMsConfigs, Params
+# if __name__ == "__main__":
+#     from res_configs import ResConfigs, TempConfigs, TIMsConfigs, Params
 
-    # 1. Configs
-    params_configs = Params(Nvirt=1, m0=0.03)
+#     # 1. Configs
+#     params_configs = Params(Nvirt=1, m0=0.03)
 
-    # 2. ResConfigs
-    weights = [0, 0, 1, 0, 0]
-    custom_sizes = [18,19,20,21,22]
-    res_configs_hetero = ResConfigs(morph_type='heterogeneous', n_instances=5, size_range=(15, 25), weights=weights, custom_sizes=custom_sizes)
-    res_configs_hetero.beta_size_ref = 20 
+#     # 2. ResConfigs
+#     weights = [0, 0, 1, 0, 0]
+#     custom_sizes = [18,19,20,21,22]
+#     res_configs_hetero = ResConfigs(morph_type='heterogeneous', n_instances=5, size_range=(15, 25), weights=weights, custom_sizes=custom_sizes)
+#     res_configs_hetero.beta_size_ref = 20 
 
-    # 2.1 ResConfigs for uniform
-    res_configs_uniform = ResConfigs(morph_type='uniform')
-    res_configs_uniform.beta_size_ref = 20 
+#     # 2.1 ResConfigs for uniform
+#     res_configs_uniform = ResConfigs(morph_type='uniform')
+#     res_configs_uniform.beta_size_ref = 20 
     
-    # TempConfigs 中应该包含 beta_temp_ref，注意检查定义
-    temp_configs = TempConfigs(temp_mode='temp_sweep', beta_temp_ref=20, temp_range=(15, 25, 1))
+#     # TempConfigs 中应该包含 beta_temp_ref，注意检查定义
+#     temp_configs = TempConfigs(temp_mode='temp_sweep', beta_temp_ref=20, temp_range=(15, 25, 1))
 
-    tims_configs = TIMsConfigs()
+#     tims_configs = TIMsConfigs()
 
-    # 3. build the Manager
-    spn_hetero = ResManager(params_configs, res_configs_hetero, temp_configs, tims_configs)
-    spn_uniform = ResManager(params_configs, res_configs_uniform, temp_configs, tims_configs)
+#     # 3. build the Manager
+#     spn_hetero = ResManager(params_configs, res_configs_hetero, temp_configs, tims_configs)
+#     spn_uniform = ResManager(params_configs, res_configs_uniform, temp_configs, tims_configs)
 
-    # 4. create the signal
-    signal_seed = 42
-    input_signal = np.random.RandomState(signal_seed).rand(100, 1) - 0.5
+#     # 4. create the signal
+#     signal_seed = 42
+#     input_signal = np.random.RandomState(signal_seed).rand(100, 1) - 0.5
 
-    # 5. transform the signal
-    env_temp = 20
-    S_hetero, J_hetero = spn_hetero.transform(input_signal, env_temp)
-    S_uniform, J_uniform = spn_uniform.transform(input_signal, env_temp)
+#     # 5. transform the signal
+#     env_temp = 20
+#     S_hetero, J_hetero = spn_hetero.transform(input_signal, env_temp)
+#     S_uniform, J_uniform = spn_uniform.transform(input_signal, env_temp)
 
-    # 6. plot the result
-    plt.plot(S_uniform)
-    plt.plot(S_hetero)
-    plt.legend(['Uniform', 'Heterogeneous'])
-    plt.show()
+#     # 6. plot the result
+#     plt.plot(S_uniform)
+#     plt.plot(S_hetero)
+#     plt.legend(['Uniform', 'Heterogeneous'])
+#     plt.show()
     
 
 # # 0. 数据保存

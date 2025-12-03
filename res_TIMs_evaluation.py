@@ -187,38 +187,38 @@ class TIMsEvaluation:
 
 # ---- 测试------#
 
-if __name__ == '__main__':
-    params = Params(Nvirt=20, m0=0.03)
+# if __name__ == '__main__':
+#     params = Params(Nvirt=20, m0=0.03)
 
-    # 形貌配置
+#     # 形貌配置
 
-    res_configs = ResConfigs(
-        morph_type='uniform',
-        # n_instances=3,
-        # size_range=(-3, 3), 
-        # weights=[0.2, 0.2, 0.8]
-        )
-    res_configs.beta_size_ref = 20
+#     res_configs = ResConfigs(
+#         morph_type='uniform',
+#         # n_instances=3,
+#         # size_range=(-3, 3), 
+#         # weights=[0.2, 0.2, 0.8]
+#         )
+#     res_configs.beta_size_ref = 20
 
-    # 温度配置
-    temp_configs = TempConfigs(
-        temp_mode='temp_sweep', 
-        beta_temp_ref=20,
-        temp_range=(18, 23,2),
-        )
-    temp_configs.beta_temp_ref = 20
+#     # 温度配置
+#     temp_configs = TempConfigs(
+#         temp_mode='temp_sweep', 
+#         beta_temp_ref=20,
+#         temp_range=(18, 23,2),
+#         )
+#     temp_configs.beta_temp_ref = 20
 
-    # TIMs配置
-    tims_configs = TIMsConfigs()
+#     # TIMs配置
+#     tims_configs = TIMsConfigs()
 
-    # 储层管理器
-    res_manager = ResManager(params, res_configs, temp_configs, tims_configs)
+#     # 储层管理器
+#     res_manager = ResManager(params, res_configs, temp_configs, tims_configs)
 
-    # 评估管理器
-    tims_evaluator = TIMsEvaluation(res_manager)
+#     # 评估管理器
+#     tims_evaluator = TIMsEvaluation(res_manager)
 
-    # 运行评估
-    results = tims_evaluator.evaluate_MC_KRandGR()
+#     # 运行评估
+#     results = tims_evaluator.evaluate_MC_KRandGR()
 
             
 

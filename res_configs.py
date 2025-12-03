@@ -31,8 +31,24 @@ class TempConfigs: # 这个类是用来配置环境温度条件
     def gen_temp_list(self):
         if self.temp_mode == 'stable':
             return [self.beta_temp_ref]
-        elif self.temp_mode == 'temp_sweep':
-            return np.arange(self.temp_range[0], self.temp_range[1], self.temp_range[2]).tolist()
+
+        start, stop, step = self.temp_range
+
+        T0 = self.beta_temp_ref
+        if not (start <= T0 <= stop):
+            raise ValueError(
+                f"beta_temp_ref={T0} 必须在 temp_range [{start}, {stop}] 内"
+            )
+
+        # 能在不越界情况下，向左右各走多少步
+        n_left = int((T0 - start) // step)
+        n_right = int((stop - T0) // step)
+        n = min(n_left, n_right)
+
+        temps = [T0 + k * step for k in range(-n, n + 1)]
+        # 可选：做个小 round，避免 19.999999 这种浮点误差
+        temps = [round(t, 6) for t in temps]
+        return temps
 
 @dataclass
 class TIMsConfigs: # 这个类是用来配置TIMs的参数
