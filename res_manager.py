@@ -1,5 +1,6 @@
 # 这个文件将根据Configs类来实例化储层
 import configparser
+from tabnanny import verbose
 from res_configs import Params, ResConfigs, TempConfigs, TIMsConfigs
 import numpy as np
 from spnc import spnc_anisotropy
@@ -9,25 +10,36 @@ from single_node_uniformreservoir import single_node_uniformreservoir
 import matplotlib.pyplot as plt
 
 class ResManager:
-    def __init__(self, params_configs: Params, res_configs: ResConfigs, temp_configs: TempConfigs, tims_configs: TIMsConfigs):
+    def __init__(self, params_configs: Params, res_configs: ResConfigs, temp_configs: TempConfigs, tims_configs: TIMsConfigs, verbose: bool = False):
         self.params_configs = params_configs
         self.res_configs = res_configs
         self.temp_configs = temp_configs
         self.tims_configs = tims_configs
         self.mask_object = None
+        self.verbose = verbose
+
+    def _verbose(self):
+        if self.verbose is False:
+            return
+        print(self.res_configs)
+
 
     def _gen_hetero_size(self):
         if self.res_configs.morph_type == 'uniform':
             return [0.0]
+            
 
         elif self.res_configs.morph_type == 'heterogeneous':
             if self.res_configs.custom_sizes is not None:
                 return [float(x) for x in self.res_configs.custom_sizes]
-                
+
             if self.res_configs.size_range is None or self.res_configs.n_instances is None:
                 raise ValueError("size_range and n_instances are required for heterogeneous reservoir")       
             size_min, size_max = self.res_configs.size_range
-            return np.random.uniform(size_min, size_max, self.res_configs.n_instances).tolist()
+            sizes = np.random.uniform(size_min, size_max, self.res_configs.n_instances).tolist()
+            if self.verbose is True:
+                print(f'Heterogeneous sizes: {sizes}')
+            return sizes
 
     def _gen_weights(self):
         if self.res_configs.morph_type == 'uniform':
@@ -46,6 +58,7 @@ class ResManager:
     # 2. 基准温度: beta_temp_ref
     # 纳米点基准尺寸变化使用deltabeta_list±beta_size_ref来体现
     # 而基准温度变化使用temp_range缩放beta_temp_ref来体现
+        self._verbose()
 
         if self.res_configs.beta_size_ref is None:
             self.res_configs.beta_size_ref = self.params_configs.beta_prime # 默认使用params_configs.beta_prime
@@ -92,7 +105,8 @@ class ResManager:
                 m0=self.params_configs.m0,
                 beta_prime=self.params_configs.beta_prime,
                 beta_size_ref=self.res_configs.beta_size_ref,
-                size_list=size_list_temp
+                size_list=size_list_temp,
+                mask_object=self.mask_object
             )
 
             return hetero
@@ -139,8 +153,9 @@ if __name__ == "__main__":
     params_configs = Params(Nvirt=1, m0=0.03)
 
     # 2. ResConfigs
-    weights = [0.2, 0.2, 0.8, 0.2, 0.2]
-    res_configs_hetero = ResConfigs(morph_type='heterogeneous', n_instances=5, size_range=(15, 25), weights=weights)
+    weights = [0, 0, 1, 0, 0]
+    custom_sizes = [18,19,20,21,22]
+    res_configs_hetero = ResConfigs(morph_type='heterogeneous', n_instances=5, size_range=(15, 25), weights=weights, custom_sizes=custom_sizes)
     res_configs_hetero.beta_size_ref = 20 
 
     # 2.1 ResConfigs for uniform

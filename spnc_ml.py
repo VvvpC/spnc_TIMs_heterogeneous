@@ -23,7 +23,7 @@ from pathlib import Path
 import numpy as np
 from matplotlib import pyplot as plt
 from tqdm import tqdm
-from single_node_heterogenous_reservoir import single_node_heterogenous_reservoir as shr
+from single_node_heteroreservoir import single_node_heteroreservoir as shr
 from joblib import Parallel, delayed
 from contextmanager import no_print
 

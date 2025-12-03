@@ -24,6 +24,7 @@ def parallel_compute_mag(instance, weight, J_1d, params, beta_size_ref):
             J_1d, params, beta_size_ref)* weight
     print('beta_size_ref:', beta_size_ref)
     print('size:', instance.beta_prime)
+    print('weight:', weight)
     return result 
 
 
@@ -49,13 +50,16 @@ class binary_mask:
 
 class single_node_heteroreservoir:
 
-    def __init__(self, Nin, Nvirt, Nout, m0, beta_prime, beta_size_ref, size_list, dilution = 1.0, identity = False, ravel_order = 'c',**kwargs):
+    def __init__(self, Nin, Nvirt, Nout, m0, beta_prime, beta_size_ref, size_list, dilution = 1.0, identity = False, ravel_order = 'c', mask_object = None, **kwargs):
 
         self.Nvirt = Nvirt
         self.beta_prime = beta_prime
         self.beta_size_ref = beta_size_ref   
         self.m0 = m0
-        self.M = binary_mask(Nin, Nvirt, self.m0, dilution, identity)
+        if mask_object is not None:
+            self.M = mask_object
+        else:
+            self.M = binary_mask(Nin, Nvirt, self.m0, dilution, identity)
         self.ravel_order = ravel_order
 
         self.anisotropy_instances = [
