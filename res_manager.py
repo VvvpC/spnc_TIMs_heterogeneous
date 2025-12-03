@@ -19,14 +19,11 @@ class ResManager:
     def _gen_hetero_size(self):
         if self.res_configs.morph_type == 'uniform':
             return [0.0]
+
         elif self.res_configs.morph_type == 'heterogeneous':
             if self.res_configs.size_range is None or self.res_configs.n_instances is None:
-                raise ValueError("size_range and n_instances are required for heterogeneous reservoir")
-            if self.res_configs.random_seed is not None:
-                np.random.seed(self.res_configs.random_seed)
-            size_min = self.res_configs.size_range[0]
-            size_max = self.res_configs.size_range[1] 
-
+                raise ValueError("size_range and n_instances are required for heterogeneous reservoir")       
+            size_min, size_max = self.res_configs.size_range
             return np.random.uniform(size_min, size_max, self.res_configs.n_instances).tolist()
 
     def _gen_weights(self):
@@ -57,12 +54,17 @@ class ResManager:
             self.mask_object = fixed_seed_mask(1, self.params_configs.Nvirt, self.params_configs.m0, seed)
 
         if self.res_configs.morph_type == 'uniform':
+            beta_temp_ref = self.temp_configs.beta_temp_ref
+            temp_scale = env_temp / beta_temp_ref
+
+            beta_T = self.res_configs.beta_size_ref * temp_scale # 温度缩放后的纳米点尺寸
+            self.params_configs.beta_prime = beta_T
             uni = spnc_anisotropy(
                 h=self.params_configs.h,
                 theta_H=self.params_configs.theta_H,
                 k_s=self.params_configs.k_s_0,
                 phi=self.params_configs.phi,
-                beta_prime=self.res_configs.beta_size_ref,
+                beta_prime=beta_T,
                 restart=True
             )
             return uni
@@ -135,7 +137,7 @@ if __name__ == "__main__":
 
     # 2. ResConfigs
     weights = [0.2, 0.2, 0.8, 0.2, 0.2]
-    res_configs_hetero = ResConfigs(morph_type='heterogeneous', n_instances=5, size_range=(-3, 3), weights=weights)
+    res_configs_hetero = ResConfigs(morph_type='heterogeneous', n_instances=5, size_range=(15, 25), weights=weights)
     res_configs_hetero.beta_size_ref = 20 
 
     # 2.1 ResConfigs for uniform
@@ -152,10 +154,11 @@ if __name__ == "__main__":
     spn_uniform = ResManager(params_configs, res_configs_uniform, temp_configs, tims_configs)
 
     # 4. create the signal
-    input_signal = np.random.rand(100, 1) - 0.5
+    signal_seed = 42
+    input_signal = np.random.RandomState(signal_seed).rand(100, 1) - 0.5
 
     # 5. transform the signal
-    env_temp = 25
+    env_temp = 20
     S_hetero, J_hetero = spn_hetero.transform(input_signal, env_temp)
     S_uniform, J_uniform = spn_uniform.transform(input_signal, env_temp)
 
@@ -166,5 +169,44 @@ if __name__ == "__main__":
     plt.show()
     
 
+# # 0. 数据保存
+# results = {}
 
+# plt.figure(figsize=(10, 5))
+# signal_seed = 42
+# input_signal = np.random.RandomState(signal_seed).rand(100, 1) - 0.5
 
+# # 0.1 温度扫描
+# # 注意：range(18, 23, 1)生成的是[18,19,20,21,22]
+# temp_range = range(18, 23, 2)
+
+# for temp in temp_range:
+#     # 1. Configs
+#     params_configs = Params(Nvirt=1, m0=0.03)
+
+#     # 2.1 ResConfigs for uniform
+#     res_configs_uniform = ResConfigs(morph_type='uniform')
+#     res_configs_uniform.beta_size_ref = 20 
+
+#     # TempConfigs 中应该包含 beta_temp_ref，注意检查定义
+#     temp_configs = TempConfigs(temp_mode='temp_sweep', beta_temp_ref=20, temp_range=(15, 25, 1))
+#     tims_configs = TIMsConfigs()
+
+#     # 3. build the Manager
+#     spn_uniform = ResManager(params_configs, res_configs_uniform, temp_configs, tims_configs)
+
+#     # 4. transform the signal
+#     env_temp = temp
+#     S_uniform, J_uniform = spn_uniform.transform(input_signal, env_temp)
+
+#     results[temp] = S_uniform  # temp直接用作key，便于后续legend
+
+# # 画图，每条线只设置一次legend，最后统一legend
+# for temp, S in results.items():
+#     plt.plot(S, label=f"Temp={temp}")
+
+# plt.legend()
+# plt.xlabel("Time")
+# plt.ylabel("S_uniform")
+# plt.title("S vs Time at Different Temperatures")
+# plt.show()

@@ -22,7 +22,8 @@ def parallel_compute_mag(instance, weight, J_1d, params, beta_size_ref):
     with contextlib.redirect_stdout(io.StringIO()):
         result = instance.gen_signal_slow_delayed_feedback_omegaref(
             J_1d, params, beta_size_ref)* weight
-    
+    print('beta_size_ref:', beta_size_ref)
+    print('size:', instance.beta_prime)
     return result 
 
 
