@@ -20,6 +20,8 @@ class ResConfigs: # 这个类是用来配置储层的形貌
     random_seed: int = 1234 # 随机种子
     beta_size_ref: Optional[float] = None # 纳米点基准尺寸
 
+    custom_sizes: Optional[list[float]] = None # 自定义尺寸列表
+
 @dataclass
 class TempConfigs: # 这个类是用来配置环境温度条件
     temp_mode: str # 'stable', 'temp_sweep'

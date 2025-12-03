@@ -21,6 +21,9 @@ class ResManager:
             return [0.0]
 
         elif self.res_configs.morph_type == 'heterogeneous':
+            if self.res_configs.custom_sizes is not None:
+                return [float(x) for x in self.res_configs.custom_sizes]
+                
             if self.res_configs.size_range is None or self.res_configs.n_instances is None:
                 raise ValueError("size_range and n_instances are required for heterogeneous reservoir")       
             size_min, size_max = self.res_configs.size_range
