@@ -1,2 +1,0 @@
-study_name,directions,n_objectives,sampler_name,creation_time,n_trials,n_completed_trials
-dynamicstims_beta20to50_theta001to06,"['MAXIMIZE', 'MAXIMIZE']",2,NSGAIISampler,2025-10-17T12:51:16.303001,289,288

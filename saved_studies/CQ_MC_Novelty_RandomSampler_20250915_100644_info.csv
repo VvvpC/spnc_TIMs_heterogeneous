@@ -1,2 +1,0 @@
-study_name,directions,n_objectives,sampler_name,creation_time,n_trials,n_completed_trials
-CQ_MC_Novelty_RandomSampler,['MAXIMIZE'],1,TPESampler,2025-09-15T10:06:44.608477,400,400

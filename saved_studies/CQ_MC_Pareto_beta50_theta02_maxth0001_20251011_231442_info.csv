@@ -1,2 +1,0 @@
-study_name,directions,n_objectives,sampler_name,creation_time,n_trials,n_completed_trials
-CQ_MC_Pareto_beta50_theta02_maxth0001,"['MAXIMIZE', 'MAXIMIZE']",2,NSGAIISampler,2025-10-11T23:14:42.287634,201,200
