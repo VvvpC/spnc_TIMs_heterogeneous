@@ -33,7 +33,7 @@ def main():
     temp_configs = TempConfigs(
         temp_mode='temp_sweep',
         beta_temp_ref=20.0,
-        temp_range=(19.03, 21.08, 0.25) # 等价于温度从5℃到35℃
+        temp_range=(19.03, 21.08, 0.1) # 等价于温度从5℃到35℃
         )
     
     # 3. TIMs配置

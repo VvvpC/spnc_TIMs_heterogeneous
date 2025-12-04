@@ -117,7 +117,31 @@ class Params:
                 self.params[key] = value
             if not hasattr(self, key) and key not in self.params:
                 raise AttributeError(f"ReservoirParams has no attribute or param key '{key}'")
-            
+
+'''
+14/04/25 添加新的configs,用于任务配置
+'''
+@dataclass
+class TaskConfigs:
+    # NARMA10
+    narma_len: int = 2000
+    narma_train_len: int = 1000
+    narma_test_len: int = 1000
+    narma_order: int = 10
+    narma_seed: int = 1234
+
+    # Ridge Regression
+    ridge_alpha: float = 0.001
+    train_temp: Optional[float] = None
+
+    # Spacer NRMSE
+    spacer_NRMSE: float = 0.001
+
+    # TI-46
+    ti46_speakers: list[str] = field(default_factory=lambda: ['f1', 'f2', 'f3', 'f4', 'f5'])
+    ti46_nfft: int = 512
+    ti46_nblocks: int = 4
+    ti46_seed: int = 1234
 
 
 # 整合三个类，
@@ -127,6 +151,7 @@ class Configs:
     res_configs: ResConfigs
     temp_configs: TempConfigs
     tims_configs: TIMsConfigs
+    task_configs: TaskConfigs
 
     def summary(self):
         info =[]
