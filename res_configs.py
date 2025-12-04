@@ -138,7 +138,7 @@ class TaskConfigs:
     spacer_NRMSE: float = 0.001
 
     # TI-46
-    ti46_speakers: list[str] = field(default_factory=lambda: ['f1', 'f2', 'f3', 'f4', 'f5'])
+    ti46_speakers: list[str] = None
     ti46_nfft: int = 512
     ti46_nblocks: int = 4
     ti46_seed: int = 1234

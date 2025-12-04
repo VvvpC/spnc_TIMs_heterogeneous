@@ -3,7 +3,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from tqdm import tqdm
 from typing import Dict, List, Tuple, Optional
-
+from joblib import Parallel, delayed
+import contextlib
+import io
 
 from formal_Parameter_Dynamics_Preformance import (
     generate_signal,
@@ -14,6 +16,38 @@ from formal_Parameter_Dynamics_Preformance import (
 
 from res_manager import ResManager
 from res_configs import Params, ResConfigs, TempConfigs, TIMsConfigs
+
+def _evaluate_MC_single_temp(temp, manager, signal, splits, delays):
+    with contextlib.redirect_stdout(io.StringIO()):
+        S, J = manager.transform(signal, env_temp=temp)
+        MC = linear_MC(signal, S, splits = splits, delays = delays)
+        return {
+            'temp': temp,
+            'MC': MC
+        }
+
+def _evaluate_KRandGR_single_temp(temp, manager, input, Nvirt, threshold):
+    with contextlib.redirect_stdout(io.StringIO()):
+        outputs = []
+        for input_row in input:
+            input_row = input_row.reshape(-1, 1)
+            S, J = manager.transform(input_row, env_temp=temp)
+            outputs.append(S)
+        States = np.stack(outputs, axis=0)
+        States_min = np.amin(States)
+        States_max = np.amax(States)
+        States = (States - States_min) / (States_max - States_min)
+
+        KR, GR = Evaluate_KR_GR(States, Nvirt, threshold=threshold)
+        CQ = KR - GR
+
+        return {
+            'temp': temp,
+            'KR': KR,
+            'GR': GR,
+            'CQ': CQ
+        }
+
 
 class TIMsEvaluation:
     def __init__(self, res_manager: ResManager):
@@ -93,7 +127,7 @@ class TIMsEvaluation:
             return filename
 
     # 评估MC
-    def evaluate_MC(self):
+    def evaluate_MC(self, n_jobs=-1):
         temp_list = self._get_temp_list()
         results = []
 
@@ -103,82 +137,74 @@ class TIMsEvaluation:
         signal = generate_signal(signal_len, seed=seed)
 
         # 2. 温度扫描
-        for temp in tqdm(temp_list, desc="temp_sweep_evaluate_MC"):
-            # 2.1 transform the signal
-            S, J = self.res_manager.transform(signal, env_temp=temp)
-
-            # 2.2 evaluate the MC
-            MC = linear_MC(signal, S, splits = self.tims_configs.mc_splits, delays = self.tims_configs.mc_delays)
-
-            results.append({
-                'temp': temp,
-                'MC': MC
-            })
-
-        # 3. 转换为DataFrame并保存
+        results = Parallel(n_jobs=n_jobs)(
+            delayed(_evaluate_MC_single_temp)(
+                temp, 
+                self.res_manager, 
+                signal, 
+                self.tims_configs.mc_splits, 
+                self.tims_configs.mc_delays
+            )
+            for temp in tqdm(temp_list, desc="temp_sweep_evaluate_MC")
+        )
+        results.sort(key=lambda x: x['temp'])
         df = pd.DataFrame(results)
         save_path = self._get_save_path('MC')
         df.to_csv(save_path, index=False)
         print(f"MC results saved to {save_path}")
-
         return df
 
+        
+
     # 评估KR和GR
-    def evaluate_KRandGR(self):
+    def evaluate_KRandGR(self, n_jobs=-1):
         temp_list = self._get_temp_list()
         results = []
 
         # 1. 生成信号
         input = gen_KR_GR_input(self.params.Nvirt, Nwash=self.tims_configs.krgr_nwash, seed=self.tims_configs.krgr_seed)
 
+        
         # 2. 温度扫描
-        for temp in tqdm(temp_list, desc="temp_sweep_evaluate_KRandGR"):
-            outputs = []
-            for input_row in input:
-                input_row = input_row.reshape(-1, 1)
-                S, J = self.res_manager.transform(input_row, env_temp=temp)
-                outputs.append(S)
-            States = np.stack(outputs, axis=0)
-            # rescale the stage to the range of [0,1]
-            States_min = np.amin(States)
-            States_max = np.amax(States)
-            States = (States - States_min) / (States_max - States_min)
+        results = Parallel(n_jobs=n_jobs)(
+            delayed(_evaluate_KRandGR_single_temp)(
+                temp, 
+                self.res_manager, 
+                input, 
+                self.params.Nvirt, 
+                self.tims_configs.krgr_threshold
+            )
+            for temp in tqdm(temp_list, desc="temp_sweep_evaluate_KRandGR")
+        )
+        results.sort(key=lambda x: x['temp'])
 
-            KR, GR = Evaluate_KR_GR(States, self.params.Nvirt, threshold=self.tims_configs.krgr_threshold)
-
-            CQ = KR - GR
-            results.append({
-                'temp': temp,
-                'KR': KR,
-                'GR': GR,
-                'CQ': CQ
-            })
-        # 3. 保存结果
         df = pd.DataFrame(results)
+
         save_path = self._get_save_path('KRandGR')
         df.to_csv(save_path, index=False)
         print(f"KR&GR results saved to {save_path}")
-        
+
         return df
+
 
     def evaluate_MC_KRandGR(self):
 
-        print(f'Start to evaluate {self.res_configs.morph_type} Reservoir')
-        print(f'temp_mode: {self.temp_configs.temp_mode}')
-        if self.res_configs.morph_type == 'heterogeneous':
-            print(f'morph_type: heterogeneous')
-            print(f'n_instances: {self.res_configs.n_instances}')
-            print(f'size_range: {self.res_configs.size_range}')
-            print(f'weights: {self.res_configs.weights}')
-            print(f'base_size: {self.res_configs.beta_size_ref}')
-        else:
-            print(f'morph_type: homogeneous')
-            print(f'base_size: {self.res_configs.beta_size_ref}')
-        print(f'base_temp: {self.temp_configs.beta_temp_ref}')
+        # print(f'Start to evaluate {self.res_configs.morph_type} Reservoir')
+        # print(f'temp_mode: {self.temp_configs.temp_mode}')
+        # if self.res_configs.morph_type == 'heterogeneous':
+        #     print(f'morph_type: heterogeneous')
+        #     print(f'n_instances: {self.res_configs.n_instances}')
+        #     print(f'size_range: {self.res_configs.size_range}')
+        #     print(f'weights: {self.res_configs.weights}')
+        #     print(f'base_size: {self.res_configs.beta_size_ref}')
+        # else:
+        #     print(f'morph_type: homogeneous')
+        #     print(f'base_size: {self.res_configs.beta_size_ref}')
+        # print(f'base_temp: {self.temp_configs.beta_temp_ref}')
         
         
-        df_MC = self.evaluate_MC()
-        df_KRandGR = self.evaluate_KRandGR()
+        df_MC = self.evaluate_MC(n_jobs=-1)
+        df_KRandGR = self.evaluate_KRandGR(n_jobs=-1)
 
         return {
             'df_MC': df_MC,

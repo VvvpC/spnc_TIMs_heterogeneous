@@ -1,7 +1,7 @@
 # 这个文件将根据Configs类来实例化储层
 import configparser
 from tabnanny import verbose
-from res_configs import Params, ResConfigs, TempConfigs, TIMsConfigs
+from res_configs import Params, ResConfigs, TempConfigs, TIMsConfigs, TaskConfigs
 import numpy as np
 from spnc import spnc_anisotropy
 from single_node_heteroreservoir import single_node_heteroreservoir
@@ -10,11 +10,12 @@ from single_node_uniformreservoir import single_node_uniformreservoir
 import matplotlib.pyplot as plt
 
 class ResManager:
-    def __init__(self, params_configs: Params, res_configs: ResConfigs, temp_configs: TempConfigs, tims_configs: TIMsConfigs, verbose: bool = False):
+    def __init__(self, params_configs: Params, res_configs: ResConfigs, temp_configs: TempConfigs, tims_configs: TIMsConfigs, task_configs: TaskConfigs, verbose: bool = False):
         self.params_configs = params_configs
         self.res_configs = res_configs
         self.temp_configs = temp_configs
         self.tims_configs = tims_configs
+        self.task_configs = task_configs
         self.mask_object = None
         self.verbose = verbose
 

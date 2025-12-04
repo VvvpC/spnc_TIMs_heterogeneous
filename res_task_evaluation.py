@@ -86,12 +86,26 @@ class TaskEvaluation:
         self.task_configs = res_manager.task_configs
         self.temp_configs = res_manager.temp_configs
 
-        self.x_train_narma, self.y_train_narma, self.x_test_narma, self.y_test_narma = self._generate_narma_data()
-        self.x_train_ti46, self.train_label_ti46, self.x_test_ti46, self.test_label_ti46, self.split1_ti46, self.split2_ti46 = self._gen_ti46_data()
-        self.net_narma = self.get_narma_weights_at_training_temperature()
-        self.net_ti46 = self.get_ti46_weights_at_training_temperature()
+        # [关键修改] 初始化时不加载数据，只设为 None (懒加载)
+        # NARMA
+        self.x_train_narma = None
+        self.y_train_narma = None
+        self.x_test_narma = None
+        self.y_test_narma = None
+        self.net_narma = None
+        
+        # TI-46
+        self.xntrain_ti46 = None
+        self.train_label_ti46 = None
+        self.xntest_ti46 = None
+        self.test_label_ti46 = None
+        self.split1_ti46 = None
+        self.net_ti46 = None
 
-    def _generate_narma_data(self):
+
+    def generate_narma_data(self):
+        if self.net_narma is not None:
+            return
         u, d = NARMA10(self.task_configs.narma_train_len + self.task_configs.narma_test_len, seed=self.task_configs.narma_seed)
 
         self.x_train_narma = u[:self.task_configs.narma_train_len]
@@ -99,7 +113,7 @@ class TaskEvaluation:
         self.x_test_narma = u[self.task_configs.narma_train_len:]
         self.y_test_narma = d[self.task_configs.narma_train_len:]
 
-        return self.x_train_narma, self.y_train_narma, self.x_test_narma, self.y_test_narma
+        self.net_narma = self.get_narma_weights_at_training_temperature()
 
     def get_narma_weights_at_training_temperature(self):
 
@@ -123,13 +137,17 @@ class TaskEvaluation:
             S_train, 
             self.y_train_narma, 
             10, 
-            quiet = False, 
+            quiet = True, 
             seed_training=self.task_configs.narma_seed
             )
 
         return net
 
     def testing_narma_at_varying_temperatures(self, n_jobs=-1):
+
+        if self.net_narma is None:
+            self.generate_narma_data()
+
         print(f"Testing NARMA10 at varying temperatures (Parallel n_jobs={n_jobs})...")
 
         # Testing at varying temperatures
@@ -149,7 +167,17 @@ class TaskEvaluation:
 
         return results
 
+    def prepare_ti46_data(self):
+        if self.net_ti46 is not None:
+            return
+
+        print("Preparing TI46 data...")
+        (self.xntrain_ti46, self.train_label_ti46, self.xntest_ti46, self.test_label_ti46, self.split1_ti46, self.split2_ti46) = self._gen_ti46_data()
+
+        self.net_ti46 = self.get_ti46_weights_at_training_temperature()
+
     def _gen_ti46_data(self):
+        
         speakers = self.task_configs.ti46_speakers
 
         self.train_signal_ti46, self.train_label_ti46, self.train_rate_ti46, self.train_speaker_ti46 = TI46.load_TI20(speakers, digits_only=True, train=True)
@@ -224,13 +252,27 @@ class TaskEvaluation:
             z_train_flat, 
             y_train_1h_flat, 
             5,
-            quiet = False, 
+            quiet = True, 
             seed_training=self.task_configs.ti46_seed
             )
+        
+        conf_mat = np.zeros((self.Nout, self.Nout))
+        pred_labels = np.zeros(len(self.split2_ti46), dtype=int)
+        Ncorrect = 0
+        for i, (zi, li) in enumerate(zip(z_train[self.split2_ti46], self.test_label_ti46[self.split2_ti46])):
+            pi = net.forward(zi)
+            pl = np.argmax(np.mean(pi, axis=0))
+            pred_labels[i] = pl
+            conf_mat[li, pl] += 1.0
+            if pl == li:
+                Ncorrect += 1
 
         return net  
 
     def testing_ti46_at_varying_temperatures(self, n_jobs=-1):
+
+        if self.net_ti46 is None:
+            self.prepare_ti46_data()
 
         temp_list = self.temp_configs.gen_temp_list()
         nblocks = self.task_configs.ti46_nblocks
