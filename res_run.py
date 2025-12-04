@@ -207,9 +207,9 @@ def main():
         # C.1 参数定义
         params_uniform = Params(
             m0=0.007, 
-            Nvirt=20, 
+            Nvirt=461, 
             beta_prime=20,
-            params={'theta': 0.65, 'gamma': 0.146, 'Nvirt': 20}
+            params={'theta': 0.65, 'gamma': 0.146, 'Nvirt': 461}
         )
         
         res_configs_uniform = ResConfigs(
@@ -234,9 +234,9 @@ def main():
         # D.1 参数定义
         params_hetero = Params(
             m0=0.00214942083634672, 
-            Nvirt=20, 
+            Nvirt=358, 
             beta_prime=20.0,
-            params={'theta': 0.379, 'gamma': 0.119, 'Nvirt': 20}
+            params={'theta': 0.379, 'gamma': 0.119, 'Nvirt': 358}
         )
 
         custom_sizes = [20.2, 22.2, 22.4, 24, 24.6, 24.8]
@@ -259,5 +259,39 @@ def main():
         # D.3 执行评估工作流
         run_reservoir_evaluation("Hetero_Res", manager_hetero, RUN_FLAGS)
 
+    # =========================================================
+    #  E. 异质储层执行块2 (Heterogeneous Reservoir)
+    # =========================================================
+    if RUN_FLAGS['ENABLE_HETERO']:
+        # D.1 参数定义
+        params_hetero2 = Params(
+            m0=0.0018142837362546912, 
+            Nvirt=149, 
+            beta_prime=20.0,
+            params={
+                'theta': 0.20572464739048968, 
+                'gamma': 0.155581477996096, 
+                'Nvirt': 149
+                })
+
+        custom_size2=[16.299, 17.212, 17.413, 22.812, 23.686]
+
+        res_configs_hetero2 = ResConfigs(
+            morph_type='heterogeneous',
+            beta_size_ref=20,
+            n_instances=5,
+            weights=[0.20, 0.28, 0.31, 0.18, 0.02],
+            custom_sizes=custom_size2 
+        )
+
+        # D.2 构建管理器
+        manager_hetero2 = ResManager(
+            params_hetero2, res_configs_hetero2, 
+            temp_configs, tims_configs, task_configs, verbose=True
+        )
+        manager_hetero2.task_configs = task_configs
+
+        # D.3 执行评估工作流
+        run_reservoir_evaluation("Hetero_Res2", manager_hetero2, RUN_FLAGS)
 if __name__ == '__main__':
     main()
