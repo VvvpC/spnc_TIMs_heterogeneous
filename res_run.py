@@ -139,7 +139,7 @@ def main():
         'ENABLE_HETERO':  True,       # 是否运行异质储层
 
         # --- 评估大类选择 ---
-        'RUN_TIMS':       True,       # 是否运行记忆能力评估 (TIMs)
+        'RUN_TIMS':       False,       # 是否运行记忆能力评估 (TIMs)
         'RUN_TASKS':      True,       # 是否运行实际任务评估 (Tasks)
 
         # --- 细分指标选择 (TIMs) ---
@@ -148,7 +148,7 @@ def main():
 
         # --- 细分任务选择 (Tasks) ---
         'RUN_NARMA':      True,       # NARMA-10 预测
-        'RUN_TI46':       False,      # TI-46 语音识别 (耗时较长，建议单独开)
+        'RUN_TI46':       True,      # TI-46 语音识别 (耗时较长，建议单独开)
         
         # --- 系统配置 ---
         'N_JOBS':         -1          # 并行计算核心数 (-1 为全部)

@@ -53,22 +53,27 @@ class ResManager:
             return [1.0/self.res_configs.n_instances] * self.res_configs.n_instances
 
     # 构建储层实例
-    def build_res(self, env_temp: float):
+    def build_res(self, env_temp: float, Nin: int = 1):
     # 这里有两个容易混淆的参数:
     # 1. 纳米点基准尺寸:beta_size_ref
     # 2. 基准温度: beta_temp_ref
     # 纳米点基准尺寸变化使用deltabeta_list±beta_size_ref来体现
     # 而基准温度变化使用temp_range缩放beta_temp_ref来体现
-        self._verbose()
+        
 
         if self.res_configs.beta_size_ref is None:
             self.res_configs.beta_size_ref = self.params_configs.beta_prime # 默认使用params_configs.beta_prime
         if self.temp_configs.beta_temp_ref is None:
             self.temp_configs.beta_temp_ref = self.params_configs.beta_prime # 默认使用params_configs.beta_prime
+        
+        if self.mask_object is None or self.mask_object.M.shape[1] != Nin:
+            if self.verbose:
+                print(f"  [Manager] Generating new Mask: Nin={Nin}, Nvirt={self.params_configs.Nvirt}")
+            
+            # 保持随机种子一致性
+            seed = self.res_configs.random_seed if self.res_configs.random_seed is not None else 1234
+            self.mask_object = fixed_seed_mask(Nin, self.params_configs.Nvirt, self.params_configs.m0, seed)
 
-        if self.mask_object is None:
-            seed = 1234
-            self.mask_object = fixed_seed_mask(1, self.params_configs.Nvirt, self.params_configs.m0, seed)
 
         if self.res_configs.morph_type == 'uniform':
             beta_temp_ref = self.temp_configs.beta_temp_ref
@@ -117,16 +122,28 @@ class ResManager:
         # 1. 确定温度模式
         if env_temp is None: # 默认为静态温度模式
             env_temp = self.temp_configs.beta_temp_ref
+
+        Nin = 1
+        if isinstance(signal, list) or (isinstance(signal, np.ndarray) and signal.dtype == object):
+            if len(signal) > 0:
+                # 取第一个样本的最后一维 (Time, Features) -> Features
+                Nin = signal[0].shape[-1]
+        
+        # Case B: 信号是普通 Numpy 数组 (如 NARMA-10)
+        elif hasattr(signal, 'shape'):
+            if signal.ndim > 1:
+                Nin = signal.shape[-1]
+
         
         # 2. 获取基准温度，来锁定input-rate
         beta_temp_ref = self.temp_configs.beta_temp_ref
 
         # 3. 构建储层
-        core = self.build_res(env_temp)
+        core = self.build_res(env_temp, Nin=Nin)
 
         if self.res_configs.morph_type == 'uniform':
             spn = single_node_uniformreservoir(
-                Nin=1,
+                Nin=Nin,
                 Nout=1,
                 Nvirt=self.params_configs.Nvirt,
                 m0=self.params_configs.m0,
