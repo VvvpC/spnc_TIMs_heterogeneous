@@ -149,7 +149,7 @@ class single_node_heteroreservoir:
                     S_instance = np.copy(J)
                     idx = 0
                     for j in range(len(S_instance)):
-                        size = (np.product(J[j].shape) if self.ravel_order is not None 
+                        size = (np.prod(J[j].shape) if self.ravel_order is not None 
                                 else J[j].shape[0])
                         S_instance[j] = mag[idx:idx + size]
                         idx += size
@@ -171,7 +171,7 @@ class single_node_heteroreservoir:
                 S = np.copy(J)
                 idx = 0
                 for i in range(len(S)):
-                    size = np.product(J[i].shape) if self.ravel_order is not None else J[i].shape[0]
+                    size = np.prod(J[i].shape) if self.ravel_order is not None else J[i].shape[0]
                     S[i] = S_1d_avarage[idx:idx+size]
                     idx += size
                 if self.ravel_order is not None:
