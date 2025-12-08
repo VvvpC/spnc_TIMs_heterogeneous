@@ -141,31 +141,31 @@ class single_node_heteroreservoir:
             }
 
         
-            # reshape the signal back to the original shape
+            # # reshape the signal back to the original shape
 
-            if J.dtype == object:
+            # if J.dtype == object:
             
-                for i, mag in enumerate(partial_mags):
-                    S_instance = np.copy(J)
-                    idx = 0
-                    for j in range(len(S_instance)):
-                        size = (np.prod(J[j].shape) if self.ravel_order is not None 
-                                else J[j].shape[0])
-                        S_instance[j] = mag[idx:idx + size]
-                        idx += size
+            #     for i, mag in enumerate(partial_mags):
+            #         S_instance = np.copy(J)
+            #         idx = 0
+            #         for j in range(len(S_instance)):
+            #             size = (np.prod(J[j].shape) if self.ravel_order is not None 
+            #                     else J[j].shape[0])
+            #             S_instance[j] = mag[idx:idx + size]
+            #             idx += size
                     
-                    if self.ravel_order is not None:
-                        for j, Si in enumerate(S_instance):
-                            S_instance[j] = Si.reshape(J[j].shape, order=self.ravel_order)
-                    instance_info[i]['S_instance'] = S_instance
+            #         if self.ravel_order is not None:
+            #             for j, Si in enumerate(S_instance):
+            #                 S_instance[j] = Si.reshape(J[j].shape, order=self.ravel_order)
+            #             instance_info[i]['S_instance'] = S_instance
 
-                else:
-                    for i, mag in enumerate(partial_mags):
-                        if self.ravel_order is not None:
-                            S_instance = mag.reshape(J.shape, order=self.ravel_order)
-                        else:
-                            S_instance = np.copy(mag)
-                        instance_info[i]['S_instance'] = S_instance
+            #     else:
+            #         for i, mag in enumerate(partial_mags):
+            #             if self.ravel_order is not None:
+            #                 S_instance = mag.reshape(J.shape, order=self.ravel_order)
+            #             else:
+            #                 S_instance = np.copy(mag)
+            #             instance_info[i]['S_instance'] = S_instance
 
             if J.dtype == object:
                 S = np.copy(J)

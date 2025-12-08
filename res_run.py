@@ -139,7 +139,7 @@ def main():
         'ENABLE_HETERO':  True,       # 是否运行异质储层
 
         # --- 评估大类选择 ---
-        'RUN_TIMS':       True,       # 是否运行记忆能力评估 (TIMs)
+        'RUN_TIMS':       False,       # 是否运行记忆能力评估 (TIMs)
         'RUN_TASKS':      True,       # 是否运行实际任务评估 (Tasks)
 
         # --- 细分指标选择 (TIMs) ---
@@ -147,7 +147,7 @@ def main():
         'RUN_KRGR':       True,       # Kernel/Generalization Rank
 
         # --- 细分任务选择 (Tasks) ---
-        'RUN_NARMA':      True,       # NARMA-10 预测
+        'RUN_NARMA':      False,       # NARMA-10 预测
         'RUN_TI46':       True,      # TI-46 语音识别 (耗时较长，建议单独开)
         
         # --- 系统配置 ---
@@ -167,7 +167,7 @@ def main():
     temp_configs = TempConfigs(
         temp_mode='temp_sweep',
         beta_temp_ref=20.0,
-        temp_range=(19.03, 21.08, 0.1) # 对应物理温度 35℃ 到 5℃
+        temp_range=(19.03, 21.08, 0.5) # 对应物理温度 35℃ 到 5℃
     )
     
     # 2. TIMs 配置
@@ -192,7 +192,7 @@ def main():
         
         # TI-46
         ti46_speakers=['f1', 'f2', 'f3', 'f4', 'f5'], # 示例：仅使用部分说话人加速测试
-        ti46_nfft=512,
+        ti46_nfft=64,
         ti46_nblocks=4,
         ti46_seed=1234,
         
@@ -234,9 +234,9 @@ def main():
         # D.1 参数定义
         params_trial31 = Params(
             m0=0.0014039451797857188, 
-            Nvirt=200, 
+            Nvirt=20, 
             beta_prime=20.0,
-            params={'theta': 0.25874177783533797, 'gamma': 0.138113559003252, 'Nvirt': 200}
+            params={'theta': 0.25874177783533797, 'gamma': 0.138113559003252, 'Nvirt': 20}
         )
 
         custom_sizes_trial31 = [20.022010988633276, 34.91316430667953, 21.512030905602636, 26.914855858706932, 22.847383645097555]
@@ -262,36 +262,36 @@ def main():
     # =========================================================
     #  E. 异质储层执行块2 (Heterogeneous Reservoir)
     # =========================================================
-    if RUN_FLAGS['ENABLE_HETERO']:
-        # D.1 参数定义
-        params_trial89 = Params(
-            m0=0.007710047089687877, 
-            Nvirt=200, 
-            beta_prime=20.0,
-            params={
-                'theta': 0.25874177783533797, 
-                'gamma': 0.138113559003252, 
-                'Nvirt': 200
-                })
+    # if RUN_FLAGS['ENABLE_HETERO']:
+    #     # D.1 参数定义
+    #     params_trial89 = Params(
+    #         m0=0.007710047089687877, 
+    #         Nvirt=200, 
+    #         beta_prime=20.0,
+    #         params={
+    #             'theta': 0.25874177783533797, 
+    #             'gamma': 0.138113559003252, 
+    #             'Nvirt': 200
+    #             })
 
-        custom_size_trial89=[20.022010988633276, 34.91316430667953, 36.069779572776895, 28.702526107148472, 28.44172483673517]
+    #     custom_size_trial89=[20.022010988633276, 34.91316430667953, 36.069779572776895, 28.702526107148472, 28.44172483673517]
 
-        res_configs_trial89 = ResConfigs(
-            morph_type='heterogeneous',
-            beta_size_ref=20,
-            n_instances=5,
-            weights=[0.3815497794850731, 0.1872381983358108, 0.004622075100171398, 0.10767188499464372, 0.318918062084301],
-            custom_sizes=custom_size_trial89 
-        )
+    #     res_configs_trial89 = ResConfigs(
+    #         morph_type='heterogeneous',
+    #         beta_size_ref=20,
+    #         n_instances=5,
+    #         weights=[0.3815497794850731, 0.1872381983358108, 0.004622075100171398, 0.10767188499464372, 0.318918062084301],
+    #         custom_sizes=custom_size_trial89 
+    #     )
 
-        # D.2 构建管理器
-        manager_trial89 = ResManager(
-            params_trial89, res_configs_trial89, 
-            temp_configs, tims_configs, task_configs, verbose=True
-        )
-        manager_trial89.task_configs = task_configs
+    #     # D.2 构建管理器
+    #     manager_trial89 = ResManager(
+    #         params_trial89, res_configs_trial89, 
+    #         temp_configs, tims_configs, task_configs, verbose=True
+    #     )
+    #     manager_trial89.task_configs = task_configs
 
-        # D.3 执行评估工作流
-        run_reservoir_evaluation("Hetero_Res2", manager_trial89, RUN_FLAGS)
+    #     # D.3 执行评估工作流
+    #     run_reservoir_evaluation("Hetero_Res2", manager_trial89, RUN_FLAGS)
 if __name__ == '__main__':
     main()
