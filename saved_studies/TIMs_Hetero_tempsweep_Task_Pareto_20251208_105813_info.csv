@@ -1,0 +1,2 @@
+study_name,directions,n_objectives,sampler_name,creation_time,n_trials,n_completed_trials
+TIMs_Hetero_tempsweep_Task_Pareto,"['MINIMIZE', 'MINIMIZE']",2,NSGAIISampler,2025-12-08T10:58:13.463123,300,300

@@ -192,7 +192,7 @@ def main():
         
         # TI-46
         ti46_speakers=['f1', 'f2', 'f3', 'f4', 'f5'], # 示例：仅使用部分说话人加速测试
-        ti46_nfft=64,
+        ti46_nfft=512,
         ti46_nblocks=4,
         ti46_seed=1234,
         
