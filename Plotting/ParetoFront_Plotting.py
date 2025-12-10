@@ -483,12 +483,12 @@ class ParetoFrontPlotter:
         return fig
 
 
-def main(data_dir: str = "saved_studies", pareto_filename: str = "CQ_MC_Paretofront_beta50_theta02_01_thr0.003_1_20251027_091941_pareto.csv", all_trials_filename: str = "CQ_MC_Paretofront_beta50_theta02_01_thr0.003_1_20251027_091941_trials.csv"):
+def main():
     """Main function demonstrating the usage of the optimized ParetoFrontPlotter."""
     
     # Example 1: Load specific files by name
     # print("=== Example 1: Loading specific files ===")
-    plotter = ParetoFrontPlotter(data_dir=data_dir)  # or your data directory
+    plotter = ParetoFrontPlotter(data_dir="saved_studies")  # or your data directory
     
     # List available files first
     plotter.list_available_files()
@@ -496,15 +496,15 @@ def main(data_dir: str = "saved_studies", pareto_filename: str = "CQ_MC_Paretofr
     # Load specific files (modify these names according to your files)
     try:
         plotter.load_data_by_filename(
-            pareto_filename=pareto_filename,  # Replace with your file
-            all_trials_filename=all_trials_filename  # Optional
+            pareto_filename="TIMs_Hetero_tempsweep_Task_Pareto_20251208_105813_pareto.csv",  # Replace with your file
+            all_trials_filename="TIMs_Hetero_tempsweep_Task_Pareto_20251208_105813_trials.csv"  # Optional
         )
         
         # Create 2D plot (save_path will be auto-generated from pareto filename)
         fig1 = plotter.plot_pareto_front_2d(
-            min_distance_threshold=0.03,
+            min_distance_threshold=0.01,
             max_distance_threshold=0.2,
-            max_near_points=100,
+            max_near_points=30,
             # save_path will be auto-generated as: CQ_MC_Pareto_SoftGate_th01_beta50_20250905_123602_pareto.png
             title_suffix="Specific File Load"
         )
