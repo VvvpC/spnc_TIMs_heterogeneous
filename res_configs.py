@@ -18,6 +18,7 @@ class ResConfigs: # 这个类是用来配置储层的形貌
     size_range: tuple[float, float] = (20, 30) # 异质点尺寸范围，注意与温度变化范围区别
     weights: list[float] | None = None # 权重范围
     random_seed: int = 1234 # 随机种子
+    trial_number: Optional[int | str] = None
     beta_size_ref: Optional[float] = None # 纳米点基准尺寸
 
     custom_sizes: Optional[list[float]] = None # 自定义尺寸列表

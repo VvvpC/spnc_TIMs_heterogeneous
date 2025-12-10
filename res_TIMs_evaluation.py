@@ -77,6 +77,12 @@ class TIMsEvaluation:
             # 基础部分
             filename_parts = [f"result_{task_name}", self.res_configs.morph_type]
 
+            # 可选的 trial number（若无则跳过）
+            trial_id = getattr(self.res_configs, 'trial_number', None)
+            if trial_id is not None and not (isinstance(trial_id, float) and np.isnan(trial_id)) and str(trial_id) != "":
+                filename_parts.append(str(trial_id))
+
+
             # 异质储层特有部分 (n_instance, deltalis(size_range), weight)
             if self.res_configs.morph_type == 'heterogeneous':
                 # n_instances

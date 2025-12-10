@@ -71,6 +71,7 @@ def create_configs_from_row(row):
         gamma = float(row['param_gamma'])
         theta = float(row['param_theta'])
         n_instances = int(row['param_n_instances'])
+        trial_id = row.get('number', None)
 
         print(f"custom_sizes: {custom_sizes}")
         print(f"weights: {weights}")
