@@ -1,0 +1,2 @@
+study_name,directions,n_objectives,sampler_name,creation_time,n_trials,n_completed_trials
+MOO_test_21,"['MINIMIZE', 'MINIMIZE']",2,NSGAIISampler,2025-12-10T11:08:29.296184,18410,380
