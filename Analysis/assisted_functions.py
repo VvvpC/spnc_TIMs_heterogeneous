@@ -162,25 +162,25 @@ def analyze_correlations(
             correlation_matrix_combined.loc["Pearson", feature] = correlation_results[feature]["pearson_corr"]
             correlation_matrix_combined.loc["Spearman", feature] = correlation_results[feature]["spearman_corr"]
 
-    # # 打印结果
-    # print(f"特征与 {target_metric} 的相关性分析结果")
-    # print("=" * 80)
-    # header = f"{'Feature':<25s} {'Pearson r':<12s} {'Pearson p':<12s} {'Spearman ρ':<12s} {'Spearman p':<12s}"
-    # print(header)
-    # print("-" * 80)
-    # for feature in tims_features:
-    #     if feature not in correlation_results:
-    #         continue
-    #     pearson_corr = correlation_results[feature]["pearson_corr"]
-    #     pearson_p = correlation_results[feature]["pearson_p"]
-    #     spearman_corr = correlation_results[feature]["spearman_corr"]
-    #     spearman_p = correlation_results[feature]["spearman_p"]
-    #     pearson_sig = "***" if pearson_p < 0.001 else "**" if pearson_p < 0.01 else "*" if pearson_p < 0.05 else ""
-    #     spearman_sig = "***" if spearman_p < 0.001 else "**" if spearman_p < 0.01 else "*" if spearman_p < 0.05 else ""
-    #     print(f"{feature:<25s} {pearson_corr:7.4f} {pearson_sig:<3s} {pearson_p:8.4f}   "
-    #           f"{spearman_corr:7.4f} {spearman_sig:<3s} {spearman_p:8.4f}")
-    # print("=" * 80)
-    # print("显著性水平: *** p<0.001, ** p<0.01, * p<0.05\n")
+    # 打印结果
+    print(f"特征与 {target_metric} 的相关性分析结果")
+    print("=" * 80)
+    header = f"{'Feature':<25s} {'Pearson r':<12s} {'Pearson p':<12s} {'Spearman ρ':<12s} {'Spearman p':<12s}"
+    print(header)
+    print("-" * 80)
+    for feature in tims_features:
+        if feature not in correlation_results:
+            continue
+        pearson_corr = correlation_results[feature]["pearson_corr"]
+        pearson_p = correlation_results[feature]["pearson_p"]
+        spearman_corr = correlation_results[feature]["spearman_corr"]
+        spearman_p = correlation_results[feature]["spearman_p"]
+        pearson_sig = "***" if pearson_p < 0.001 else "**" if pearson_p < 0.01 else "*" if pearson_p < 0.05 else ""
+        spearman_sig = "***" if spearman_p < 0.001 else "**" if spearman_p < 0.01 else "*" if spearman_p < 0.05 else ""
+        print(f"{feature:<25s} {pearson_corr:7.4f} {pearson_sig:<3s} {pearson_p:8.4f}   "
+              f"{spearman_corr:7.4f} {spearman_sig:<3s} {spearman_p:8.4f}")
+    print("=" * 80)
+    print("显著性水平: *** p<0.001, ** p<0.01, * p<0.05\n")
 
     fig = None
     if plot:
