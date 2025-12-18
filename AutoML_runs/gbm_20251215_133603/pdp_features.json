@@ -1,0 +1,10 @@
+{
+  "pdp_features": [
+    "second_order_sensitivity_CQ",
+    "first_order_sensitivity_MC",
+    "mean_CQ",
+    "amplitude_MC",
+    "var_MC",
+    "median_MC"
+  ]
+}

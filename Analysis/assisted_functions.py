@@ -211,3 +211,7 @@ def analyze_correlations(
         plt.tight_layout()
         plt.show()
 
+def beta_to_temp(data):
+    data = data/20 *293.15-273.15
+
+    return data

@@ -1,0 +1,10 @@
+{
+  "y": "averagenrmse",
+  "x": [
+    "amplitude_MC",
+    "std_CQ",
+    "first_order_sensitivity_MC"
+  ],
+  "ignore_cols": [],
+  "seed": 123
+}

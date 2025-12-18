@@ -139,8 +139,8 @@ def main():
         'ENABLE_HETERO':  True,       # 是否运行异质储层
 
         # --- 评估大类选择 ---
-        'RUN_TIMS':       False,       # 是否运行记忆能力评估 (TIMs)
-        'RUN_TASKS':      True,       # 是否运行实际任务评估 (Tasks)
+        'RUN_TIMS':       True,       # 是否运行记忆能力评估 (TIMs)
+        'RUN_TASKS':      False,       # 是否运行实际任务评估 (Tasks)
 
         # --- 细分指标选择 (TIMs) ---
         'RUN_MC':         True,       # Memory Capacity
@@ -167,7 +167,7 @@ def main():
     temp_configs = TempConfigs(
         temp_mode='temp_sweep',
         beta_temp_ref=20.0,
-        temp_range=(19.03, 21.08, 0.5) # 对应物理温度 35℃ 到 5℃
+        temp_range=(19.03, 21.08, 0.1) # 对应物理温度 35℃ 到 5℃
     )
     
     # 2. TIMs 配置
@@ -232,32 +232,32 @@ def main():
     # =========================================================
     if RUN_FLAGS['ENABLE_HETERO']:
         # D.1 参数定义
-        params_trial31 = Params(
-            m0=0.0014039451797857188, 
-            Nvirt=20, 
+        params_heterogeneous = Params(
+            m0=0.00214942083634672, 
+            Nvirt=358, 
             beta_prime=20.0,
-            params={'theta': 0.25874177783533797, 'gamma': 0.138113559003252, 'Nvirt': 20}
+            params={'theta': 0.37916131466641434, 'gamma': 0.11899425227193927, 'Nvirt': 358}
         )
 
-        custom_sizes_trial31 = [20.022010988633276, 34.91316430667953, 21.512030905602636, 26.914855858706932, 22.847383645097555]
+        custom_sizes_heterogeneous = [24.7168629064682, 22.1876769165298, 20.2243803133547, 22.1356915569845, 24.0944603868459, 24.6436748426105]
 
-        res_configs_trial31 = ResConfigs(
+        res_configs_heterogeneous = ResConfigs(
             morph_type='heterogeneous',
             beta_size_ref=20,
-            n_instances=5,
-            weights=[0.27135885195874415, 0.13316412503710276, 0.3410891318922953, 0.032786213253582185, 0.2216016778582756],
-            custom_sizes=custom_sizes_trial31 
+            n_instances=6,
+            weights=[0.183085371, 0.200779583, 0.164725526, 0.198412703, 0.154623300,0.098373517],
+            custom_sizes=custom_sizes_heterogeneous 
         )
 
         # D.2 构建管理器
-        manager_trial31 = ResManager(
-            params_trial31, res_configs_trial31, 
+        manager_heterogeneous = ResManager(
+            params_heterogeneous, res_configs_heterogeneous, 
             temp_configs, tims_configs, task_configs, verbose=True
         )
-        manager_trial31.task_configs = task_configs
+        manager_heterogeneous.task_configs = task_configs
 
         # D.3 执行评估工作流
-        run_reservoir_evaluation("Hetero_Res", manager_trial31, RUN_FLAGS)
+        run_reservoir_evaluation("Hetero_Res", manager_heterogeneous, RUN_FLAGS)
 
     # =========================================================
     #  E. 异质储层执行块2 (Heterogeneous Reservoir)

@@ -1,0 +1,21 @@
+{
+  "y": "averagenrmse",
+  "x": [
+    "mean_CQ",
+    "median_CQ",
+    "std_CQ",
+    "var_CQ",
+    "amplitude_CQ",
+    "first_order_sensitivity_CQ",
+    "second_order_sensitivity_CQ",
+    "mean_MC",
+    "median_MC",
+    "std_MC",
+    "var_MC",
+    "amplitude_MC",
+    "first_order_sensitivity_MC",
+    "second_order_sensitivity_MC"
+  ],
+  "ignore_cols": [],
+  "seed": 123
+}

@@ -1,0 +1,44 @@
+{
+  "__meta": {
+    "schema_version": 3,
+    "schema_name": "ModelMetricsRegressionV3",
+    "schema_type": "ModelMetricsRegression"
+  },
+  "model": {
+    "__meta": {
+      "schema_version": 3,
+      "schema_name": "ModelKeyV3",
+      "schema_type": "Key<Model>"
+    },
+    "name": "GBM_model_python_1765805509321_1",
+    "type": "Key<Model>",
+    "URL": "/3/Models/GBM_model_python_1765805509321_1"
+  },
+  "model_checksum": -6774647116336294188,
+  "frame": {
+    "__meta": {
+      "schema_version": 3,
+      "schema_name": "FrameKeyV3",
+      "schema_type": "Key<Frame>"
+    },
+    "name": "py_2_sid_8b78",
+    "type": "Key<Frame>",
+    "URL": "/3/Frames/py_2_sid_8b78"
+  },
+  "frame_checksum": 509115031969607743,
+  "description": null,
+  "model_category": "Regression",
+  "scoring_time": 1765805515775,
+  "predictions": null,
+  "MSE": 0.00265452409056218,
+  "RMSE": 0.05152207381853122,
+  "nobs": 37,
+  "custom_metric_name": null,
+  "custom_metric_value": 0.0,
+  "r2": 0.9034552028017383,
+  "mean_residual_deviance": 0.00265452409056218,
+  "mae": 0.036887288093566895,
+  "rmsle": 0.0236732268336463,
+  "loglikelihood": "NaN",
+  "AIC": "NaN"
+}

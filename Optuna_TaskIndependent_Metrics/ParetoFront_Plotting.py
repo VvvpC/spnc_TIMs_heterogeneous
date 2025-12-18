@@ -415,8 +415,8 @@ class ParetoFrontPlotter:
         #     )
         
         # Formatting
-        ax.set_xlabel('Computational Quality (CQ)', fontsize=16)
-        ax.set_ylabel('Memory Capacity (MC)', fontsize=16)
+        ax.set_xlabel('Minimum NRMSE', fontsize=16)
+        ax.set_ylabel('Average NRMSE', fontsize=16)
         # xiufu
         # The original line is incorrect usage of set_ticklabels and 'xlabel' is undefined.
         # If the intent is to set tick label font size, use tick_params:
@@ -511,8 +511,8 @@ def main():
     # Load specific files (modify these names according to your files)
     try:
         plotter.load_data_by_filename(
-            pareto_filename="CQ_MC_Pareto_SoftGate_th01_beta50_20250905_123602_pareto.csv",  # Replace with your file
-            all_trials_filename="CQ_MC_Pareto_SoftGate_th01_beta50_20250905_123602_trials.csv"  # Optional
+            pareto_filename="TIMs_Hetero_tempsweep_Task_Pareto_20251208_105813_pareto.csv",  # Replace with your file
+            all_trials_filename="TIMs_Hetero_tempsweep_Task_Pareto_20251208_105813_trials.csv"  # Optional
         )
         
         # Create 2D plot (save_path will be auto-generated from pareto filename)

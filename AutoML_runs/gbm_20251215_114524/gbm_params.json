@@ -1,0 +1,14 @@
+{
+  "distribution": "gaussian",
+  "ntrees": 200,
+  "max_depth": 2,
+  "learn_rate": 0.05,
+  "min_rows": 5,
+  "sample_rate": 0.8,
+  "col_sample_rate": 0.8,
+  "nfolds": 5,
+  "fold_assignment": "Random",
+  "seed": 123,
+  "keep_cross_validation_predictions": true,
+  "keep_cross_validation_models": false
+}

@@ -409,8 +409,8 @@ class ParetoFrontPlotter:
                   linewidth=0.5, edgecolor='black')
         
         # Formatting (Fonts handled by set_pub_style)
-        ax.set_xlabel('Computational Quality (CQ)')
-        ax.set_ylabel('Memory Capacity (MC)')
+        ax.set_xlabel('Minimum NRMSE')
+        ax.set_ylabel('Average NRMSE')
         ax.legend(loc='best')
         
         # Add file info and distance threshold to the plot
