@@ -4,6 +4,18 @@ import numpy as np
 from scipy.stats import linregress
 from scipy.optimize import curve_fit
 
+def CV(data):
+    return np.std(data) / np.mean(data)
+
+def rCV_MAD(data):
+    x = np.asarray(data, dtype=float)
+    m = np.median(x)
+    mad = np.median(np.abs(x - m))
+    return (1.4826 * mad) / m
+
+def avg(data):
+    return np.mean(data)
+
 # 求平均值和中位数
 def mean_and_median(data):
     return np.mean(data), np.median(data)
@@ -31,9 +43,12 @@ def second_order_sensitivity(data):
 # 分析集合函数
 def analysis_TIMs_with_temperatures(data):
     results = {}
+    results['CV'] = CV(data)
+    results['rCV_MAD'] = rCV_MAD(data)
+    results['avg'] = avg(data)
     results['mean'], results['median'] = mean_and_median(data)
     results['std'], results['var'], results['amplitude'] = std_and_var_and_amplitude(data)
-    results['first_order_sensitivity'] = first_order_sensitivity(data)
-    results['second_order_sensitivity'] = second_order_sensitivity(data)
+    # results['first_order_sensitivity'] = first_order_sensitivity(data)
+    # results['second_order_sensitivity'] = second_order_sensitivity(data)
     return results
 

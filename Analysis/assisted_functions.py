@@ -12,75 +12,85 @@ import seaborn as sns
 from scipy.stats import pearsonr, spearmanr
 
 
-def load_data(folder_path, file_pattern, columns_of_interest=None):
+def load_data(folder_path, file_pattern, columns_of_interest=None, file_types=("csv", "pkl")):
     """
     参数:
     folder_path: 数据文件夹路径 (可以是相对路径)
     file_pattern: 文件名前缀匹配模式 (例如 'result_MC_heterogeneous')
     columns_of_interest: 需要保留的列名列表 (例如 ['temp', 'MC']), None则保留所有
-    
+    file_types: 允许的文件类型，默认同时支持 ("csv","pkl")
+
     返回:
-    merged_df: 合并后的完整 DataFrame，包含一列 'Legend_Label'
+    merged_df: 合并后的完整 DataFrame，包含一列 'number'
     """
-    # 1. 设置路径 (自动处理 Windows/Mac 路径分隔符)
-    # 假设当前 notebook 在 Analysis 文件夹，数据在同级的 pareto... 文件夹
-    # resolve() 会把 '..' 转换成绝对路径，避免路径混乱
-    base_dir = Path.cwd() 
+    # 1. 设置路径
+    base_dir = Path.cwd()
     target_dir = (base_dir / folder_path).resolve()
-    
-    # 2. 查找文件
-    # glob 搜索指定 pattern 开头的 csv 文件
-    search_pattern = f"{file_pattern}*.csv"
-    files = list(target_dir.glob(search_pattern))
-    
+
+    # 2. 查找文件（同时支持 csv/pkl）
+    files = []
+    for ext in file_types:
+        ext = ext.lstrip(".").lower()
+        files.extend(list(target_dir.glob(f"{file_pattern}*.{ext}")))
+
+    # 去重 + 排序（按文件名）
+    files = sorted(set(files), key=lambda p: p.name)
+
     if not files:
-        print(f"警告: 在 {target_dir} 中没有找到匹配 '{search_pattern}' 的文件")
+        exts = ",".join([f".{e.lstrip('.').lower()}" for e in file_types])
+        print(f"警告: 在 {target_dir} 中没有找到匹配 '{file_pattern}*({exts})' 的文件")
         return pd.DataFrame()
 
     data_list = []
-    
     print(f"找到 {len(files)} 个文件，开始处理...")
 
     for file in files:
-        # 3. 解析文件名提取 Legend (核心逻辑)
-        # 文件名示例: result_KRandGR_heterogeneous_1_n4_...
-        # split('_') 按照下划线分割
+        # 3. 解析文件名提取 Legend
         try:
-            filename_parts = file.stem.split('_')
-            # 根据你的需求：提取第三个下划线后面的内容 (索引为 3)
-            #索引: 0      1       2             3
-            #内容: result KRandGR heterogeneous 1
+            filename_parts = file.stem.split("_")
             legend_val = filename_parts[3]
         except IndexError:
-            legend_val = "Unknown" # 防止文件名格式不一致报错
-            
-        # 4. 读取数据
-        df = pd.read_csv(file)
-        
-        # 5. 筛选列 (如果指定了列名)
+            legend_val = "Unknown"
+
+        # 4. 读取数据（csv / pkl）
+        suffix = file.suffix.lower()
+        if suffix == ".csv":
+            df = pd.read_csv(file)
+        elif suffix == ".pkl":
+            import pickle
+            with open(file, "rb") as f:
+                df = pickle.load(f)
+            if not isinstance(df, pd.DataFrame):
+                print(f"警告: 跳过 {file.name}，原因: pkl 解包后不是 DataFrame，而是 {type(df)}")
+                continue
+        else:
+            print(f"警告: 跳过 {file.name}，原因: 不支持的后缀 {suffix}")
+            continue
+
+        # 5. 筛选列（如果指定了列名）
         if columns_of_interest:
-            # 取交集，防止某些列不存在导致报错
             valid_cols = [c for c in columns_of_interest if c in df.columns]
             df = df[valid_cols]
-            
-        # 6. 【优雅的关键】将提取的 Legend 作为一个新列加入数据
-        df['number'] = legend_val
-        
+
+        # 6. 添加标签列
+        df["number"] = legend_val
         data_list.append(df)
-        
+
     # 7. 合并所有数据
-    if data_list:
-        merged_df = pd.concat(data_list, ignore_index=True)
-        # 可选：如果 legend 是数字，转为数字类型以便排序
-        try:
-            merged_df['number'] = pd.to_numeric(merged_df['number'])
-            merged_df = merged_df.sort_values('number') # 按图例顺序排序
-        except ValueError:
-            pass # 如果不是数字，保持字符串原样
-            
-        return merged_df
-    else:
+    if not data_list:
         return pd.DataFrame()
+
+    merged_df = pd.concat(data_list, ignore_index=True)
+
+    # 可选：如果 number 是数字，转为数字类型以便排序
+    try:
+        merged_df["number"] = pd.to_numeric(merged_df["number"])
+        merged_df = merged_df.sort_values("number")
+    except ValueError:
+        pass
+
+    return merged_df
+
 
 
 def analyze_correlations(
@@ -117,7 +127,7 @@ def analyze_correlations(
         绘图对象；plot=False 时为 None。
     """
     default_features = [
-        "mean", "median", "std", "var", "amplitude",
+         "mean", "median", "std", "var", "amplitude",
         "first_order_sensitivity", "second_order_sensitivity",
     ]
     tims_features = features if features is not None else default_features
@@ -215,3 +225,4 @@ def beta_to_temp(data):
     data = data/20 *293.15-273.15
 
     return data
+
