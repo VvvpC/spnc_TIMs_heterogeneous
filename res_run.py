@@ -59,6 +59,13 @@ def get_smart_filename(manager, task_name,ext = ".csv"):
     temp_mode = getattr(temp_cfg, 'temp_mode', 'NA')
     filename_parts.append(f"{temp_mode}")
 
+    gamma = getattr(manager.params_configs, 'gamma', 'NA')
+    filename_parts.append(f"g{gamma}")
+    theta = getattr(manager.params_configs, 'theta', 'NA')
+    filename_parts.append(f"t{theta}")
+    m0 = getattr(manager.params_configs, 'm0', 'NA')
+    filename_parts.append(f"m0{m0}")
+
     # 组合文件名
     filename = "_".join(map(str, filename_parts)) + ext
     return filename
@@ -135,20 +142,20 @@ def main():
     # =========================================================
     RUN_FLAGS = {
         # --- 储层选择 ---
-        'ENABLE_UNIFORM': False,       # 是否运行均质储层
+        'ENABLE_UNIFORM': True,       # 是否运行均质储层
         'ENABLE_HETERO':  True,       # 是否运行异质储层
 
         # --- 评估大类选择 ---
-        'RUN_TIMS':       True,       # 是否运行记忆能力评估 (TIMs)
-        'RUN_TASKS':      False,       # 是否运行实际任务评估 (Tasks)
+        'RUN_TIMS':       False,       # 是否运行记忆能力评估 (TIMs)
+        'RUN_TASKS':      True,       # 是否运行实际任务评估 (Tasks)
 
         # --- 细分指标选择 (TIMs) ---
         'RUN_MC':         True,       # Memory Capacity
         'RUN_KRGR':       True,       # Kernel/Generalization Rank
 
         # --- 细分任务选择 (Tasks) ---
-        'RUN_NARMA':      False,       # NARMA-10 预测
-        'RUN_TI46':       True,      # TI-46 语音识别 (耗时较长，建议单独开)
+        'RUN_NARMA':      True,       # NARMA-10 预测
+        'RUN_TI46':       False,      # TI-46 语音识别 (耗时较长，建议单独开)
         
         # --- 系统配置 ---
         'N_JOBS':         -1          # 并行计算核心数 (-1 为全部)

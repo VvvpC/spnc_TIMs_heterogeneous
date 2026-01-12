@@ -1,0 +1,2 @@
+study_name,directions,n_objectives,sampler_name,creation_time,n_trials,n_completed_trials
+TIMs_Uniform_tempsweep_Task_Pareto,"['MINIMIZE', 'MINIMIZE']",2,NSGAIISampler,2026-01-07T18:50:40.191221,300,300

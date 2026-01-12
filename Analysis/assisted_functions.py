@@ -95,8 +95,9 @@ def load_data(folder_path, file_pattern, columns_of_interest=None, file_types=("
 
 def analyze_correlations(
     analysis_results_df: pd.DataFrame,
-    features=None,
+    target_df: pd.DataFrame,
     target_metric: str = "averagenrmse",
+    features=None,
     plot: bool = True,
     plot_style_func=None,  # 传入类似 plot_style_config.set_pub_style 的函数；不传则不调用
 ):
@@ -132,16 +133,16 @@ def analyze_correlations(
     ]
     tims_features = features if features is not None else default_features
 
-    if target_metric not in analysis_results_df.index:
-        raise ValueError(f"'{target_metric}' not found in analysis_results_df.index")
+    if target_metric not in target_df.columns:
+        raise ValueError(f"'{target_metric}' not found in target_df.columns")
+    target_values = target_df[target_metric]
 
-    target_values = analysis_results_df.loc[target_metric]
     correlation_results = {}
 
     for feature in tims_features:
-        if feature not in analysis_results_df.index:
+        if feature not in analysis_results_df.columns:
             continue
-        feature_values = analysis_results_df.loc[feature]
+        feature_values = analysis_results_df[feature]
         valid_mask = ~(np.isnan(feature_values) | np.isnan(target_values))
         if valid_mask.sum() < 2:
             correlation_results[feature] = {

@@ -48,7 +48,7 @@ def analysis_TIMs_with_temperatures(data):
     results['avg'] = avg(data)
     results['mean'], results['median'] = mean_and_median(data)
     results['std'], results['var'], results['amplitude'] = std_and_var_and_amplitude(data)
-    # results['first_order_sensitivity'] = first_order_sensitivity(data)
-    # results['second_order_sensitivity'] = second_order_sensitivity(data)
+    results['first_order_sensitivity'] = first_order_sensitivity(data)
+    results['second_order_sensitivity'] = second_order_sensitivity(data)
     return results
 
